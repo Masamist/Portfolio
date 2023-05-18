@@ -1,21 +1,18 @@
-import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import KPCProject from './pages/KPCProject'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <nav>
-          <h1>Masami Stonebridge</h1>
-          <Link to="/">Home</Link>
-          <Link to="/about">About Me</Link>
-          <Link to="/projects">Projects</Link>
-        </nav>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -23,6 +20,7 @@ function App() {
           <Route path="/kpc-project" element={<KPCProject />} />
           <Route path="/redirect" element={<Navigate to="/" />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  padding: 1rem 2rem .8rem 1rem;
+}
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer ul > li{
+  margin: .5em 2em;
+}
+.footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-copyright{
+  color: #999;
+  text-align: center;
+  font-size: .7em;
+}
+
+@media screen and (max-width: 500px) {
+  .footer ul > li{
+    margin: .5em 1em;
+  }
+  }

@@ -10,16 +10,23 @@ import happychick from '../assets/happy_chick.png'
 
 export default function Home() {
   return (
-    <div className='home'>
+    <>
+      <HomeTop />
+      <Introduction />
+      <Projects />
+      <Challenge />
+    </>
+  )
+}
+
+function HomeTop() {
+  return (
+    <section className='home-top'>
       <h1>Hi, I am Masami.<br />
         Software Developer<br />
         and Designer</h1>
       <img src={portrait} alt='portrait' />
-      
-      <Introduction />
-      <Projects />
-      <Challenge />
-    </div>
+    </section>
   )
 }
 
@@ -44,8 +51,9 @@ function Projects() {
   return (
     <section className='home-project'>
       <div className='container'>
-        <h1>Project</h1>
-        <p>I have learned software development skills such as Agile projects, 
+          <h1 className='home-project-title'>Project</h1>
+
+        <p className='home-project-txt'>I have learned software development skills such as Agile projects, 
           many programming languages, coding, how to approach and resolve issues. 
           These are some of my projects that I completed while studying Software Development at Whitecliffe. </p>
         <div className='home-project-container'>
@@ -82,8 +90,8 @@ function Challenge() {
   return (
     <section className='home-challenge'>
       <div className='container'>
-      <h1>I love the challenge of finding a solution.</h1>
-        <p>I have graduated in Software Development
+      <h1 className='challenge-title'>I love the challenge of finding a solution.</h1>
+        <p className='challenge-txt'>I have graduated in Software Development
            and I felt “I want to make more web apps!”. 
            I really like creative work including design and coding. 
            While I am coding, bugs can be frustrating though 

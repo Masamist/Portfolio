@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 /* variables */
 :root {
   --heading-color: #444;
@@ -16,7 +19,7 @@
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: Roboto, sans-serif;
   margin: 0;
   font-size: 1.1em;
   background: var(--bg-color);
@@ -39,6 +42,9 @@ a{
 .container {
   max-width: 1250px;
   margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .btn-white {
@@ -50,19 +56,6 @@ a{
   font-size: 1.2em;
   border: 2px solid #fff;
   align-self: center;
-}
-.btn-blue {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 7px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1.1em;
-  border: 1px solid var(--bg-color);
-  padding: .2em 1.5em;
-  align-self: center;
-  font-weight: 600;
-  margin-top: .5em;
 }
 
 .btn-yellow {
@@ -76,20 +69,9 @@ a{
   align-self: center;
 }
 
-
-.btn:hover {
-  color: var(--primary-color);
-  background: inherit;
-  border: .9px solid var(--primary-color);
-  font-weight: 600;
-}
 .btn-white:hover {
-  color: var(--bg-color);
-  background: inherit;
-}
-.btn-green:hover {
   color: var(--primary-color);
-  background: inherit;
+  background: #fff;
 }
 .btn-yellow:hover {
   color: #fff;
