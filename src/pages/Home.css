@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 
-.home-introduction h2, p{
+.introduction-header, .introduction-p{
   color: #fff;
 }
 
@@ -16,6 +16,33 @@
   font-size: 2.5rem;
 }
 
-.home-project{
+.home-project-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.home-project-container div{
+  width: 30%;
+
+}
+
+@media (max-width: 800px) {
+  .home-project-container{
+    flex-direction: column;
+    
+  }
+}
+
+.home-challenge {
+  background-color: var(--secondary-color);
+  align-items: center;
+
+}
+.challenge-title {
+  font-size: 5rem;
+  color: #fff;
+}
+.challenge-txt{
+  color: #fff;
 }
