@@ -22,10 +22,14 @@ export default function Home() {
 function HomeTop() {
   return (
     <section className='home-top'>
-      <h1>Hi, I am Masami.<br />
-        Software Developer<br />
-        and Designer</h1>
-      <img src={portrait} alt='portrait' />
+      <div>
+        <h1 className='home-top-title'>Hi, I am Masami.<br />
+          Software Developer<br />
+          and Designer</h1>
+      </div>
+      <div>
+        <img src={portrait} alt='portrait' />
+      </div>
     </section>
   )
 }
