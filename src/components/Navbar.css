@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@100;500;700;900&display=swap');.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@100;500;700;900&display=swap');
+.navbar {
   width: 30%;
   padding-bottom: 0;
   display: flex;
@@ -14,15 +15,12 @@
 .logo {
   font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  color: #bbb;
-  text-align: end;
-  padding-right: 1rem;
-}
-.navbar .logo {
-  font-weight: bold;
-  color: #bbb;
   letter-spacing: 1px;
+  font-weight: 500;
+  color: #ccc;
+  text-align: end;
+  padding-top: .5rem;
+  padding-right: 1rem;
   display: flex;
   align-items: center;
   margin-right: auto;

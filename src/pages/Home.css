@@ -4,12 +4,12 @@
   flex-direction: row;
   width: 100%;
   height: 50vh;
-  padding: 5rem;
+  padding: 2rem 0 5rem 0;
   justify-content: center;
 }
 .home-top div:first-child {
   width: 35%;
-  padding: 3.5rem;
+  padding: 3.3rem;
 }
 .home-top-title {
   font-size: 4rem;
@@ -20,73 +20,104 @@
   max-height: 35vh;
 }
 
+/* introduction */
 .home-introduction {
   height: 100%;
   width: 100%;
-  padding: 5rem 10rem;
+  padding: 4rem 5rem 2.5rem 10rem;
   background-color: var(--primary-color);
-  display: flex;
-  flex-direction: column;
 }
-
-.introduction-header, .introduction-p {
-  color: #fff;
-}
-
-.section-header{
-  font-size: 2.5rem;
-}
-
-.home-project-title {
-  
-  color: var(--tertiary-color);
-  font-family: Montserrat, sans-serif;
-  font-size: 5rem;
-}
-.home-project-text {
+.home-introduction-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+.home-introduction-container div {
+  padding-right: 1.5rem;
+}
+.introduction-header {
+  padding-top: 2rem;
+  color: #fff;
+  font-size: 2.8rem;
+}
+.introduction-p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding: 2rem 0;
 }
 
+/* projects */
+.home-project {
+  padding: 4rem 0;
+}
+.home-project-title {
+  color: var(--tertiary-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: 100;
+  font-size: 10rem;
+  float: right;
+}
+.home-project-txt-container {
+  padding: 3rem 0;
+  width: 60%;
+}
+.home-project-txt {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
 .home-project-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 3rem 0 4rem 0;
 }
-
 
 .home-project-container div{
   width: 30%;
-
+}
+.home-project-container div p{
+  padding-top: .3rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 .home-project-container img {
   border: 1px solid #BFBFBF;
   box-shadow: 5px 5px 5px #ddd;
+  margin-bottom: 1.5rem;
 }
 .home-project-container h3 {
   color: var(--tertiary-color);
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 300;
+  padding: .5rem 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .home-project-container{
     flex-direction: column;
   }
 }
 
+/* challenge */
 .home-challenge {
   background-color: var(--secondary-color);
   align-items: center;
-
+  padding: 5rem 0;
+  justify-content: center;
 }
+
 .challenge-title {
-  font-size: 5rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 5.3rem;
+  font-weight: 200;
   color: #fff;
+  text-align: center;
 }
 .challenge-txt{
   color: #fff;
+  padding: 3rem 12rem;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
 }
 .home-challenge button {
   align-items: center;
