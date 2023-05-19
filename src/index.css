@@ -55,6 +55,7 @@ a{
   font-size: 1.2em;
   border: 2px solid #fff;
   align-self: center;
+  text-decoration: none;
 }
 
 .btn-yellow {
@@ -66,8 +67,8 @@ a{
   font-size: 1.2em;
   border: 2px solid var(--tertiary-color);
   align-self: center;
+  text-decoration: none;
 }
-
 .btn-white:hover {
   color: var(--primary-color);
   background: #fff;

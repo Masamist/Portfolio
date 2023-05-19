@@ -15,7 +15,7 @@
 .logo {
   font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1px;
+  
   font-weight: 500;
   color: #ccc;
   text-align: end;
@@ -44,5 +44,5 @@
 }
 .navbar ul li a:hover {
   text-decoration: none;
-  color:  var(--secondary-color);;
+  color: var(--secondary-color);;
 }

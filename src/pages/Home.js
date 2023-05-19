@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 // style
 import './Home.css'
 
@@ -97,7 +99,7 @@ function Projects() {
                 The website is deployed and used by the client.</p>
             </div>
           </div>
-        <button className='btn-yellow'>More Projects</button>
+        <button className='btn-yellow'><Link to="/products">More Projects</Link></button>
       </div>
     </section>
   )

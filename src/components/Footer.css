@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 .footer-logo-container {
   width: 20rem;
@@ -26,21 +26,25 @@
 .footer ul > li{
   margin: 1em 1.5em;
   font-size: 1.1rem;
-  text-decoration: none;
+  font-weight: 400;
+
 }
-.footer ul > li :hover{
-  color: var(--primary-color);
+.footer ul > li a {
+  text-decoration: none;
+  color: #666;
+}
+.footer ul > li a:hover {
+  text-decoration: none;
+  color: var(--secondary-color);;
 }
 
 .footer-copyright{
-  color: #999;
+  color: #aaa;
   text-align: center;
   font-size: .8em;
-  margin-bottom: 1.5rem;
+  padding-bottom: .8rem;
+  
 }
-
-@media screen and (max-width: 500px) {
-  .footer ul > li{
-    margin: .5em 1em;
-  }
-  }
+.footer-copyright img {
+  padding: .5rem;
+}

@@ -45,6 +45,9 @@
   line-height: 1.8rem;
   padding: 2rem 0;
 }
+.btn a{
+  text-decoration: none;
+}
 
 /* projects */
 .home-project {
@@ -90,6 +93,9 @@
   font-size: 2.1rem;
   font-weight: 300;
   padding: .5rem 0;
+}
+#home-project-btn a {
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
