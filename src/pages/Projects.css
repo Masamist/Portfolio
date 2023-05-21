@@ -1,42 +1,21 @@
 /* Common items */
+.project-wrap {
+  width: 100%;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+}
 .sub-title{
   color: #999;
   font-size: 1.9rem;
   font-family: 500;
   padding-top: 3.5rem;
 }
-.tool-icons-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 3rem 0 1rem 0;
-}
-.tool-icons {
-  width: 55%;
-}
-#right {
-  float: right;
-}
-
-
-/* Poject Top Area */
-.project-top {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 50vh;
-  padding: 6rem 25rem;
-}
 .project-title {
-  color: var(--primary-color);
-  font-family: Montserrat, sans-serif;
-  font-weight: 100;
-  font-size: 12rem;
-}
-.project-top-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
+  font-size: 4rem;
+  font-family: 300;
+  color: #768423;
+  padding: 1.3rem 0 1.3rem 0;
 }
 .project-txt-container {
   padding: 3rem 0;
@@ -47,14 +26,54 @@
   font-size: 1.4rem;
   line-height: 2.1rem;
 }
-
-/* Kauri Point Construction */
-.project-kpc {
+.tool-icons-container {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding: 10rem 0;
+  padding: 1rem 0;
+}
+.tool-icons {
+  width: 55%;
+}
+#right {
+  float: right;
+}
+#txt-gray {
+  color: #999;
+}
+#white-txt-color {
+  color: #fff;
+}
+
+/* Poject Top Area */
+.project-top {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  padding: 6rem 20rem;
 }
+.project-top-title {
+  color: var(--primary-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: 100;
+  font-size: 12rem;
+}
+.project-top-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.button-container > div {
+  flex: 48%;
+}
+
+/* Kauri Point Construction */
 .project-img-container {
   display: flex;
   flex-direction: column;
@@ -64,29 +83,27 @@
   border: 1px solid #999;
   justify-content: center;
 }
-.project-kpc-title {
-  font-size: 4rem;
-  font-family: 300;
-  color: #768423;
-  padding: 1.3rem 0 1.3rem 0;
-}
 .project-img-container > p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.9rem;
+  padding-bottom: 2rem;
 }
-.button-container {
+.kpc-button-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  padding: 3rem 0;
 }
-.button-container > div {
-  flex: 48%;
-  gap: 2%;
+.kpc-button-container > div {
+  flex: 50%;
+  padding-top: 1.5rem;
 }
-.kpc-button {
+.kpc-button-container > div:first-child {
+  flex: 100%;
+}
+.kpc-button-whole {
   color: #768423;
   background-color: inherit;
-  width: 96%;
+  width: 100%;
   padding: .5rem 0;
   border-radius: 4px;
   cursor: pointer;
@@ -95,14 +112,213 @@
   align-self: center;
   text-decoration: none;
 }
-.kpc-button:hover{
+.kpc-button {
+  color: #768423;
+  background-color: inherit;
+  width: 98%;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid #768423;
+  align-self: center;
+  text-decoration: none;
+}
+.kpc-button-whole:hover{
   color: #fff;
   background-color: #768423;;
   border: 2px solid #768423;;
 }
-.GeyIt{
+.kpc-button:hover{
+  color: #fff;
+  background-color: #768423;
+  border: 2px solid #768423;
+}
+
+/* Get IT Python */
+.GeyIt {
   height: 100%;
   width: 100%;
-  padding: 4rem 5rem 2.5rem 10rem;
+  padding: 5rem 0;
   background-color: var(--primary-color);
+}
+.getit-container {
+  display: flex;
+  flex-direction: row;
+  gap:4%;
+  padding-bottom: 4rem;
+}
+.getit-container div{
+  flex: 50%;
+
+}
+#project-txt-getit {
+  color: #fff;
+  line-height: 2.2rem;
+}
+
+.poster-container div{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poster-container > div img {
+  padding: 4em 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.getit-txt-container {
+  width: 50rem;
+}
+.project-single-link a{
+  text-decoration: none;
+}
+.project-single-button {
+  color: #fff;
+  display: inline;
+  width: 48%;
+  background-color: inherit;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid #fff;
+  align-self: center;
+  text-decoration: none;
+}
+#gap{
+  margin-right: 1rem;
+}
+.project-single-button:hover{
+  color: var(--primary-color);
+  background-color: #fff;
+}
+.project-single-button a {
+  text-decoration: none;
+}
+
+/* poco a poco */
+#poco-color {
+  color: #ADA482;
+}
+.project-poco-button {
+  margin: 3rem 0;
+  color: #ADA482;
+  display: inline;
+  width: 48%;
+  background-color: inherit;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid #ADA482;
+  align-self: center;
+  text-decoration: none;
+}
+.project-poco-button:hover{
+  color: #fff;
+  background-color: #ADA482;
+}
+.project-poco-button a {
+  text-decoration: none;
+}
+
+/* Happy Chick */
+.game {
+  height: 100%;
+  width: 100%;
+  padding: 5rem 0 0 0;
+  background-color: var(--tertiary-color);
+}
+.game-container {
+  display: flex;
+  flex-direction: row;
+  gap:6%;
+  padding-bottom: 4rem;
+}
+.game-image {
+  padding-top: 4rem;
+}
+.game-button {
+  color: #666;
+  background-color: inherit;
+  width: 100%;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid #666;
+  align-self: center;
+  text-decoration: none;
+  margin-bottom: 8rem;
+}
+.game-button:hover {
+  color: #666;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+#game-tools-icon {
+  width: 10rem;
+}
+
+/* Whitecliffe Digital Resources */
+#dresources_img {
+  border: none;
+}
+#dresources-color {
+  color: #6FCF97;
+}
+.dresources-button {
+  margin: 3rem 0;
+  color: #6FCF97;
+  display: inline;
+  width: 48%;
+  background-color: inherit;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid #6FCF97;
+  align-self: center;
+  text-decoration: none;
+}
+.dresources-button:hover {
+  color: #fff;
+  background-color: #6FCF97;
+}
+
+/* AMS */
+#ams-color {
+  color: #2D9CDB;
+}
+#ams-tools-icon {
+  width: 15rem;
+  padding: 2rem 0;
+}
+.ams-button {
+  color: #2D9CDB;
+  background-color: inherit;
+  width: 100%;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid #2D9CDB;
+  align-self: center;
+  text-decoration: none;
+}
+.ams-button:hover {
+  color: #fff;
+  background-color: #2D9CDB;
+  border: 2px solid #2D9CDB;
+}
+
+/* Tradies */
+#tradie-backgroup-color {
+  background-color: var(--tertiary-color);
+}
+#tradie-txt-color {
+  color: #666;
 }
