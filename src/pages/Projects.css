@@ -322,3 +322,91 @@
 #tradie-txt-color {
   color: #666;
 }
+.tradies-button {
+  margin: 3rem 0;
+  color: #666;
+  display: inline;
+  width: 48%;
+  background-color: inherit;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid #666;
+  align-self: center;
+  text-decoration: none;
+}
+.tradies-button:hover {
+  color: var(--tertiary-color);
+  background-color: #756229;
+  border: 2px solid #756229;
+}
+#tradie_img {
+  margin-top: 2.5rem;
+  border: 1px solid #ccc;
+}
+
+/* Eye Candy Cinema */
+#cinema-txt-color {
+  color: #FD7777;
+}
+#cinema-tools-icon {
+  width: 23rem;
+  padding: 2rem 0;
+}
+.cinema-button {
+  margin: 3rem 0;
+  color: #FD7777;
+  display: inline;
+  width: 48%;
+  background-color: inherit;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid #FD7777;
+  align-self: center;
+  text-decoration: none;
+}
+.cinema-button:hover {
+  color: #fff;
+  background-color: #FD7777;
+  border: 2px solid #FD7777;
+}
+
+/* Sugar Sumash */
+#suger-smash-txt-color {
+  color: #F2994A;
+}
+.unique-title {
+  text-align: center;
+  font-size: 2.7rem;
+  font-family: 400;
+  color: #F2994A;
+  padding: 3.7rem 0;
+}
+.sugar-smash-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sugar-smash-container > div {
+  width: 22rem;
+  padding: 0 1rem;
+}
+.sugar-smash-container > div img {
+  width: 19rem;
+}
+.sugar-smash-h2 {
+  font-weight: 400;
+  color: #F2994A;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+}
+
+/* Others */
+.others-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--tertiary-color);
+}

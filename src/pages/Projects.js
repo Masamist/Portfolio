@@ -20,6 +20,16 @@ import tools_dresources from '../assets/tools_digital_resources.png'
 import ams1 from '../assets/ams1.png'
 import ams2 from '../assets/ams2.png'
 import tools_ams from '../assets/tools_ams.png'
+import tradie1 from '../assets/tradie1.png'
+import tradie2 from '../assets/tradie2.png'
+import tradie3 from '../assets/tradie3.png'
+import tradie4 from '../assets/tradie4.png'
+import tools_tradies from '../assets/tools_tradies.png'
+import cinema from '../assets/cinema.png'
+import tools_cinema from '../assets/tools_cinema.png'
+import sugar_smash1 from '../assets/sugar_smash1.png'
+import sugar_smash2 from '../assets/sugar_smash2.png'
+import sugar_smash3 from '../assets/sugar_smash3.png'
 
 export default function Projects() {
   return (
@@ -32,6 +42,9 @@ export default function Projects() {
       <DigitalResources />
       <AMS />
       <Tradies />
+      <EyeCandyCinema />
+      <SugerSmash />
+      <Others />
     </>
   )
 }
@@ -172,13 +185,13 @@ function Poco() {
           </div>
           
           <div className='project-single-link'>
-              <a href='https://github.com/Masamist/Get_It_Python_Project'>
-                <button className='project-poco-button' id='gap'>Code on GitHub</button>
-              </a>
-              <a href='https://github.com/Masamist/Get_It_Python_Project'>
-                <button className='project-poco-button'>Code on GitHub</button>
-              </a>
-            </div>
+            <a href='https://github.com/Masamist/Get_It_Python_Project'>
+              <button className='project-poco-button' id='gap'>Code on GitHub</button>
+            </a>
+            <a href='https://github.com/Masamist/Get_It_Python_Project'>
+              <button className='project-poco-button'>Code on GitHub</button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -330,20 +343,135 @@ function Tradies() {
             The challenging part was communication in the team as Covid-19 
             outbreak was during this assessment, and lock-down changed our study 
             routine and we successfully improved how we communicated with each other. </p>
-              <img id='dresources_img' src={ams1} alt='AMS app' />
-              <img id='dresources_img' src={ams2} alt='AMS app' />
+            
           <div className='tool-icons-container'>
-            <img className='tool-icons' id='ams-tools-icon' src={tools_ams} alt='Tool icons' />
+            <img className='tool-icons' src={tools_tradies} alt='Tool icons' />
+          </div>
+          <div className='project-single-link'>
+            <a href='https://github.com/Masamist/tradies'>
+              <button className='tradies-button' id='gap'>Code on GitHub</button>
+            </a>
+            <a href='https://masamist.github.io/tradies/'>
+              <button className='tradies-button'>Deployed Site</button>
+            </a>
+          </div>
+        </div>
+          <img id='tradie_img' src={tradie1} alt='Tradies Mock-up' />
+          <img id='tradie_img' src={tradie2} alt='Tradies Mock-up' />
+          <img id='tradie_img' src={tradie3} alt='Tradies Mock-up' />
+          <img id='tradie_img' src={tradie4} alt='Tradies Mock-up' />
+          
+          
+      </div>
+    </section>
+  )
+}
+
+function EyeCandyCinema() {
+  return (
+    <section className='project-wrap'>
+      <div className='container'>
+        <div className='project-img-container'>
+          <img src={cinema} alt='Eye Candy Cinema' />
+          <h3 className='sub-title'>Web Project</h3>
+          <h1 className='project-title' id='cinema-txt-color'>Eye Candy Cinema</h1>
+          <p>This is an individual assignment and the first website I created at 
+            Whitecliffe utilising simple HTML, CSS and JavaScript. A website for 
+            a cinema called Eye Candy Cinema which is a local cinema specializing 
+            in international film festival movies and some indie movies. 
+            This project was to gain elementary skills to build a website and 
+            also planning including business analysis of client information, 
+            scheduling, page site structure with wire-frames and mock-ups using 
+            Figma. I also learned about data model structure and design with SQL 
+            using Eye Candy Cinema movie information.</p>
+          <div className='tool-icons-container'>
+            <img id='cinema-tools-icon' className='tool-icons' src={tools_cinema} alt='Tool icons' />
           </div>
           
           <div className='project-single-link'>
-              <a href='https://github.com/Masamist/Get_It_Python_Project'>
-                <button className='ams-button' id='gap'>Code on GitHub</button>
-              </a>
-            </div>
+            <a href='https://github.com/Masamist/EyeCandyCinemas'>
+              <button className='cinema-button' id='gap'>Code on GitHub</button>
+            </a>
+            <a href='https://masamist.github.io/EyeCandyCinemas/'>
+              <button className='cinema-button'>Deployed Site</button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   )
 }
 
+function SugerSmash() {
+  return (
+    <section className='project-wrap'>
+      <div className='container'>
+        <div className='project-img-container'>
+          <h3 className='sub-title'>Professional Practice</h3>
+          <h1 className='project-title' id='suger-smash-txt-color'>Sugar Smash</h1>
+          <p>My first group project at Whitecliffe. This project was to define 
+            a world problem, research and discover a solution with team mates. 
+            The problem we selected was sugar consumption and health issues. 
+            Sugar can be a cause of poor health, obesity, and diabetes.
+            Creating an app called “Sugar Smash”  as our solution which helps 
+            you to control your sugar intake with information on low sugar choices, 
+            alternatives, and low sugar recipes for food that tastes fantastic and 
+            is great for your health.
+            We created a lean canvas using Mural board, 
+            created a mock-up and presented a whole solution plan of 
+            the mobile app with Figma.</p>     
+        </div>
+        <h2 className='unique-title'>Unique Value Proposition</h2>
+        <div className='sugar-smash-container'>
+          <div>
+            <img src={sugar_smash1} alt='Sugar Smash App' />
+            <h2 className='sugar-smash-h2'>Gamification</h2>
+            <p>Fun game with a rewards system encouraging you to achieve your goal.</p>
+          </div>
+          <div>
+            <img src={sugar_smash2} alt='Sugar Smash App' />
+            <h2 className='sugar-smash-h2'>Easy to record products</h2>
+            <p>Barcode Scanner + manual database search makes input easy.</p>
+          </div>
+          <div>
+            <img src={sugar_smash3} alt='Sugar Smash App' />
+            <h2 className='sugar-smash-h2'>Social Interactive</h2>
+            <p>Social group interaction to support your goal also newsletters and articles​.</p>
+          </div>
+
+        
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Others() {
+  return (
+    <section className='GeyIt'>
+      <div className='container'>
+        <h1 className='others-title'>Additional learnings</h1>
+        <div className='getit-container'>
+          <div>
+            <h1 className='project-title' id='white-txt-color'>C#</h1>
+            <p className='project-txt' id='project-txt-getit'>I learnt about C# in the 
+            Data Structure and Algorithm lecture. The lecture was a great introduction 
+            to understanding C# programming basics such as OOP (Object Oriented Programming), 
+            data structure includes lists, stacks and queues, 
+            some basic algorithm of sorting, and software design patterns.</p>
+          </div>
+        </div>
+        <div className='getit-container'>
+          <div>
+            <h1 className='project-title' id='white-txt-color'>Unit Testing</h1>
+            <p className='project-txt' id='project-txt-getit'>Testing is an important process for software or 
+            web applications. TDD (Test Driven Development) is a preferable approach 
+            for application success. 
+            I learnt unittest for Python and JEST for React JS. </p>
+          </div>
+        </div>
+      </div>
+        
+    </section>
+  )
+}
