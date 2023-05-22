@@ -45,6 +45,15 @@ a{
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 1250px) {
+  .container {
+    max-width: 800px;
+    margin: 60px 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .btn-white {
   background-color: inherit;

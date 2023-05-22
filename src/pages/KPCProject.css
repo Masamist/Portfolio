@@ -1,0 +1,49 @@
+.kpc-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/kpc_bg_image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.kpc-container {
+  max-width: 55rem;
+  padding: 15rem 5rem;
+}
+.kpc-top-title{
+  font-size: 4rem;
+  font-family: 500;
+  line-height: 5rem;
+}
+.kpc-top-txt {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding: 1rem 0 2rem 0;
+}
+.project-top-link a{
+  text-decoration: none;
+}
+.project-top-button {
+  color: #768423;
+  display: inline;
+  width: 48%;
+  background-color: inherit;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid #768423;
+  align-self: center;
+  text-decoration: none;
+}
+#gap{
+  margin-right: 1rem;
+}
+.project-top-button:hover{
+  color: #fff;
+  background-color: #768423;
+}
+.project-top-button a {
+  text-decoration: none;
+}

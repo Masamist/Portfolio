@@ -1,4 +1,4 @@
-
+/* home top */
 .home-top {
   display: flex;
   flex-direction: row;
@@ -9,7 +9,7 @@
 }
 .home-top div:first-child {
   width: 35%;
-  padding: 3.3rem;
+  padding: 3.2rem;
 }
 .home-top-title {
   font-size: 4rem;
@@ -18,6 +18,16 @@
 }
 .home-top img {
   max-height: 35vh;
+}
+@media (max-width: 1000px) {
+  .home-top-title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .home-top div:first-child {
+    width: 50%;
+    padding: 3.3rem 0;
+  }
 }
 
 /* introduction */
