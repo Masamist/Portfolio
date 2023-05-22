@@ -23,7 +23,6 @@ import tools_ams from '../assets/tools_ams.png'
 import tradie1 from '../assets/tradie1.png'
 import tradie2 from '../assets/tradie2.png'
 import tradie3 from '../assets/tradie3.png'
-import tradie4 from '../assets/tradie4.png'
 import tools_tradies from '../assets/tools_tradies.png'
 import cinema from '../assets/cinema.png'
 import tools_cinema from '../assets/tools_cinema.png'
@@ -88,13 +87,19 @@ function Kpc() {
           
           <div className='kpc-button-container'>
             <div>
-              <button className='kpc-button-whole'>More about project</button>
+              <Link to="/kpc-project">
+                <button className='kpc-button-whole'>More about project</button>
+              </Link>
             </div>
             <div>
-              <button className='kpc-button'>Code on GitHub</button>
+              <a href='https://github.com/Masamist/KauriPointConstruction'>
+                <button className='kpc-button'>Code on GitHub</button>
+              </a>
             </div>
             <div>
-              <button className='kpc-button' id='right'>Deployed Site</button>
+              <a href='https://www.kauripointconstruction.co.nz/'>
+                <button className='kpc-button' id='right'>Deployed Site</button>
+              </a>
             </div>  
           </div> 
         </div>
@@ -181,7 +186,7 @@ function Poco() {
             booking then synchronize your booking on your calendar, 
             also has features like managing membership and email remainder. </p>
           <div className='tool-icons-container'>
-            <img className='tool-icons' src={tools_poco} alt='Tool icons' />
+            <img className='poco-icons' src={tools_poco} alt='Tool icons' />
           </div>
           
           <div className='project-single-link'>
@@ -208,7 +213,7 @@ function HappyChick() {
             Godot Gaming Project
             </h3>
             <h1 className='project-title' id='white-txt-color'>Happy Chick</h1>
-            <p className='project-txt' id='game-txt-color'>This is a solo project and my first time 
+            <p className='project-txt'>This is a solo project and my first time 
             creating a game. This game is 2D side scroll platform made with Godot Game 
             Engine which can be enjoyed by children through to adults. 
             I planed the game story, character setting and selecting music. 
@@ -234,9 +239,7 @@ function HappyChick() {
             collecting these unique items, also a few secret items. At the end of the trip, 
             he would become a super happy chick with many friends and found a wonderful 
             girlfriend.</p>
-            <div className='tool-icons-container'>
-              <img className='tool-icons' id='game-tools-icon' src={tools_game} alt='Tool icons' />
-            </div>
+            <img className='game-icons' src={tools_game} alt='Tool icons' />
             <div className='project-single-link'>
               <a href='https://github.com/Masamist/HappyChick'>
                 <button className='game-button' id='gap'>Code on GitHub</button>
@@ -358,10 +361,7 @@ function Tradies() {
         </div>
           <img id='tradie_img' src={tradie1} alt='Tradies Mock-up' />
           <img id='tradie_img' src={tradie2} alt='Tradies Mock-up' />
-          <img id='tradie_img' src={tradie3} alt='Tradies Mock-up' />
-          <img id='tradie_img' src={tradie4} alt='Tradies Mock-up' />
-          
-          
+          <img id='tradie_img' src={tradie3} alt='Tradies Mock-up' />        
       </div>
     </section>
   )
@@ -451,27 +451,22 @@ function Others() {
     <section className='GeyIt'>
       <div className='container'>
         <h1 className='others-title'>Additional learnings</h1>
-        <div className='getit-container'>
-          <div>
-            <h1 className='project-title' id='white-txt-color'>C#</h1>
-            <p className='project-txt' id='project-txt-getit'>I learnt about C# in the 
-            Data Structure and Algorithm lecture. The lecture was a great introduction 
-            to understanding C# programming basics such as OOP (Object Oriented Programming), 
-            data structure includes lists, stacks and queues, 
-            some basic algorithm of sorting, and software design patterns.</p>
-          </div>
+        <div className='others-container' id='content-left'>
+          <h1 className='project-title' id='white-txt-color'>C#</h1>
+          <p className='project-txt' id='project-txt-getit'>I learnt about C# in the 
+          Data Structure and Algorithm lecture. The lecture was a great introduction 
+          to understanding C# programming basics such as OOP (Object Oriented Programming), 
+          data structure includes lists, stacks and queues, 
+          some basic algorithm of sorting, and software design patterns.</p>
         </div>
-        <div className='getit-container'>
-          <div>
-            <h1 className='project-title' id='white-txt-color'>Unit Testing</h1>
-            <p className='project-txt' id='project-txt-getit'>Testing is an important process for software or 
-            web applications. TDD (Test Driven Development) is a preferable approach 
-            for application success. 
-            I learnt unittest for Python and JEST for React JS. </p>
-          </div>
+        <div className='others-container' id='content-right'>
+          <h1 className='project-title' id='white-txt-color'>Unit Testing</h1>
+          <p className='project-txt' id='project-txt-getit'>Testing is an important process for software or 
+          web applications. TDD (Test Driven Development) is a preferable approach 
+          for application success. 
+          I learnt unittest for Python and JEST for React JS. </p>
         </div>
-      </div>
-        
+      </div> 
     </section>
   )
 }

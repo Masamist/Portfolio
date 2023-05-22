@@ -1,0 +1,121 @@
+/* Introduction */
+.about-top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 5rem;
+}
+.about-container {
+  width: 47rem;
+  padding-bottom: 8rem;
+}
+
+.about-top-title {
+  color: var(--secondary-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 4.2rem;
+  font-family: 500;
+  line-height: 5rem;
+  padding-bottom: 1rem;
+  line-height: 5rem;
+}
+.about-top-txt {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  padding-top: 1.5rem;
+}
+
+/* Experience */
+.about-ex-container {
+  width: 47rem;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+
+}
+.about-ex-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-ex-container > div:first-child {
+  width: 35%;
+}
+.about-ex-container > div:nth-child(2) {
+  width: 68%;
+}
+.about-ex-category {
+  font-weight: 400;
+  color: var(--secondary-color);
+  float: right;
+}
+.about-ex-title {
+  font-size: 1.6rem;
+  padding-bottom: .8rem;
+}
+.about-ex-year-info {
+  font-size: .9rem;
+  color: #999;
+  padding-bottom: .9rem;
+}
+.about-ex-txt {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.about-cv-button {
+  color: var(--secondary-color);
+  background-color: inherit;
+  width: 98%;
+  padding: .5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  border: 2px solid var(--secondary-color);
+  align-self: center;
+  text-decoration: none;
+}
+.about-cv-button:hover{
+  color: #fff;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+/* Contact */
+#contact-bg-color {
+  background-color: var(--secondary-color);
+  margin-top: 7rem;
+  padding: 3rem 0;
+}
+.contact-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 5rem;
+  font-weight: 200;
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+}
+.contact-txt{
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+.form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+}
+.contact-form-title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 2rem 0;
+}
+.form > input, textarea {
+  margin: 1rem 0;
+}
