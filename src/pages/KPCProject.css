@@ -6,6 +6,7 @@
   background-image: url('../assets/kpc_bg_image.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 }
 .kpc-container {
   max-width: 55rem;
@@ -46,4 +47,20 @@
 }
 .project-top-button a {
   text-decoration: none;
+}
+
+/* Requirement */
+.kpc-req-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.kpc-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8%;
+}
+.kpc-img-container > div img {
+  border: 1px solid #999;
 }

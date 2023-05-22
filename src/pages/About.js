@@ -18,20 +18,16 @@ function AboutIntroduction() {
       <div className='about-container'>
         <h1 className='about-top-title'>Hi there,<br />I am Masami.</h1>
         <p className='about-top-txt'>
-          I graduated Software Development course from Whitecliffe and 
-          willing to build a career of Full-Stack developer.</p>
+        I graduated Software Development at Whitecliffe and focused 
+        on building my career as a Full-Stack developer. </p>
         <p className='about-top-txt'>
-          My skills are React, HTML, CSS, Bootstrap, Django as Front-end and Node, 
-          Mongo DB, SQL, Firebase as Back-end. Also I have skilled with Javascript, 
-          Python and C# as a software developer. I have a design background as well 
-          as  I used to work Design office as a graphic designer, which support UX 
-          and UI design using Figma, Adobe Illustrator and Photoshop. 
-          And I have also learnt about agile project management with depth, 
-          as a scrum master, a project manager, a business analyst, finance, 
-          and of cause as a developer.</p>
+        My skills are React, HTML, CSS, Bootstrap, Django as Front-end and Node, 
+        Mongo DB, SQL, Firebase as Back-end, also JavaScript, Python and C#. 
+        I also have background in design, I was a graphic designer which I leverage for UX and UI design my skills here are Figma, Adobe Illustrator and Photoshop. I effectively contribute to an agile team environment with my agile project management skills. 
+        </p>
         <p className='about-top-txt'>
-          I love creative work not only designing and coding an application. 
-          I am looking forward to dive new project and working with new people.</p>
+        I love creative work designing and coding an application. 
+        I am looking forward to diving into a new project and working with new people.</p>
       </div>
     </section>
   )
