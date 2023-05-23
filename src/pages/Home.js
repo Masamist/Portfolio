@@ -11,6 +11,7 @@ import getitpython from '../assets/get_it_python.png'
 import happychick from '../assets/happy_chick.png'
 
 
+
 export default function Home() {
   return (
     <>
@@ -25,12 +26,12 @@ export default function Home() {
 function HomeTop() {
   return (
     <section className='home-top'>
-      <div>
+      <div className='home-top-container'>
         <h1 className='home-top-title'>Hi, I am Masami.<br />
           Software Developer<br />
           and Designer</h1>
       </div>
-      <div>
+      <div className='home-top-container'>
         <img src={portrait} alt='portrait' />
       </div>
     </section>
@@ -39,25 +40,23 @@ function HomeTop() {
 
 function Introduction() {
   return (
-    <section className='home-introduction'>
-      <div className='container'>
-        <div className='home-introduction-container'>
-          <div>
-            <img src={introimage} alt='introduction images' />
+    <section className='home-intro'>
+        <div className='home-intro-container'>
+          <div className='intro-img-container'>
+            <img className='intro-img' src={introimage} alt='introduction images' />
           </div>
         
           <div>
-            <h2 class='introduction-header'>
+            <h2 class='intro-header'>
               My passion is in Web Development <br />
               and UX UI Design
             </h2>
-            <p class='introduction-p'>I am a graduate of the Software Development course at Whitecliffe College and excited to build a career as a Full-Stack developer.
+            <p class='intro-p'>I am a graduate of the Software Development course at Whitecliffe College and excited to build a career as a Full-Stack developer.
               My skills are React, JavaScript, HTML, CSS, Bootstrap, Django Framework with Python as a front-end, and Node, SQL and MongoDB as back-end. I am also an experienced designer.  
               I am excited to apply my skills and creativity on new projects.</p>
             <button className='btn-white'>About Me</button>
           </div>
         </div> 
-      </div>
               
       </section>
   )
@@ -78,7 +77,7 @@ function Projects() {
           
           <div className='home-project-container'>
             <div>
-            <img src={kpc} alt='Kauri Point Construction' />
+              <img src={kpc} alt='Kauri Point Construction' />
               <h3>Kauri Point Construction</h3>
               <p>Group work for the final project in the Software Development course. 
                 The goal was to create a construction website including a project management app. 
@@ -87,19 +86,24 @@ function Projects() {
             <div>
               <img src={getitpython} alt='Get IT Python' />
               <h3>Get IT Python</h3>
-              <p>Group work for the final project in the Software Development course. 
-                The goal was to create a construction website including a project management app. 
-                The website is deployed and used by the client.</p>
+              <p>This project had 2 aspects, one is an agile project 
+                management, that is how the project management with 
+                scrum and the other is to build a secure web service 
+                for users to learn Python and other programming 
+                languages.</p>
             </div>
             <div>
               <img src={happychick} alt='Happy Chick Game' />
               <h3>Happy Chick</h3>
-              <p>Group work for the final project in the Software Development course. 
-                The goal was to create a construction website including a project management app. 
-                The website is deployed and used by the client.</p>
+              <p>2D side scroll platform made with Godot Game Engine 
+                to be enjoyed by children through to adults. I planned 
+                the game story, character setting, music selection 
+                and built the game. This game was popular when 
+                demonstrated at school events and an learning institution
+                 industry  expo.</p>
             </div>
           </div>
-        <button className='btn-yellow'><Link to="/products">More Projects</Link></button>
+        <button className='btn-yellow' id='home-project-btn'><Link to="/products">More Projects</Link></button>
       </div>
     </section>
   )

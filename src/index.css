@@ -40,18 +40,15 @@ a{
 /* layout */
 .container {
   max-width: 1200px;
-  margin: 60px auto;
+  margin: auto auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background-color: #ccc; */
 }
 @media (max-width: 1250px) {
   .container {
-    max-width: 800px;
-    margin: 60px 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: auto 1rem;
   }
 }
 
