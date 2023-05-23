@@ -223,11 +223,15 @@
   font-weight: 300;
   padding: .5rem 0;
 }
-#home-project-btn a {
-  text-decoration: none;
+.home-project-btn {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1400px) {
+  .home-project {
+    padding: 4rem 0 5rem 0;
+  }
   .home-project-title {
     font-size: 10rem;
     padding-right: 1.5rem;
@@ -239,10 +243,11 @@
   .home-project-container{
     flex-direction: column;
     align-items: center;
+    margin: 3rem 0 0;
   }
   .home-project-container > div{
     width: 35rem;
-    padding-bottom: 8rem;
+    padding-bottom: 7rem;
   }
   .home-project-container img {
     display: block;
@@ -250,6 +255,7 @@
     margin-right: auto;
     margin-bottom: 2.5rem;
   }
+
 }
 @media (max-width: 850px) {
   .home-project-title {
@@ -318,9 +324,46 @@
 .challenge-txt{
   color: #fff;
   padding: 3rem 12rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2.5rem;
 }
 .home-challenge button {
   align-items: center;
+}
+.home-challenge button:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 1200px) {
+  .challenge-title {
+    font-size: 4rem;
+  }
+  .challenge-txt{
+    color: #fff;
+    padding: 3rem 8rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+}
+@media (max-width: 800px) {
+  .challenge-title {
+    font-size: 3rem;
+  }
+  .challenge-txt{
+    color: #fff;
+    padding: 3rem 3rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .challenge-title {
+    font-size: 2.8rem;
+  }
+  .challenge-txt{
+    color: #fff;
+    padding: 3rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
 }

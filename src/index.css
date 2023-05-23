@@ -72,8 +72,8 @@ a{
   cursor: pointer;
   font-size: 1.2em;
   border: 2px solid var(--tertiary-color);
-  align-self: center;
   text-decoration: none;
+  justify-content: center;
 }
 .btn-white:hover {
   color: var(--primary-color);

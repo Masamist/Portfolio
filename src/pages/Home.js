@@ -103,7 +103,13 @@ function Projects() {
                  industry  expo.</p>
             </div>
           </div>
-        <button className='btn-yellow' id='home-project-btn'><Link to="/products">More Projects</Link></button>
+          <div className='home-project-btn'>
+            <Link to="/products">
+              <button className='btn-yellow'>
+                More Projects
+              </button>
+            </Link>
+          </div>
       </div>
     </section>
   )
@@ -122,7 +128,7 @@ function Challenge() {
             rewarding once I the find the solution. 
             I am excited to commence new projects and collaborate in a team.
           </p>
-        <button className='btn-white'>About Me</button>  
+        <button className='btn-white' id='challenge-color'>About Me</button>  
       </div>
     </section>
   )

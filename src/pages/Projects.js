@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import './Projects.css'
 
 // images
-
 import kpc from '../assets/projetcs_kpc.png'
 import toolsicon from '../assets/tools_kpc.png'
 import getit_pc from '../assets/getit_pc_image.png'
@@ -126,7 +125,7 @@ function GetItPython() {
             and opportunities for further growth.</p>
           </div>
           <div>
-            <img src={getit_pc} alt='Get IT Python PC' />
+            <img className='getit-pc-img' src={getit_pc} alt='Get IT Python PC' />
           </div>
         </div>
         <div className='poster-container'>
