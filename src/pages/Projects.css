@@ -125,7 +125,7 @@
     width: 100%;
     padding: .5rem 0;
     margin: .6rem 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 @media (max-width: 450px) {
@@ -140,6 +140,7 @@
   .tool-icons {
     width: 18rem;
   } 
+
 }
 @media (max-width: 300px) {
   .tool-icons {
@@ -300,6 +301,13 @@
     line-height: 1.5rem;
     padding-bottom: 1.5rem;
   }
+  .kpc-button-container > div {
+    flex: 100%;
+    padding: 1.5rem 0 0 0;
+  }
+  #right {
+    float: left;
+  }
 }
 
 
@@ -379,7 +387,7 @@
     padding: 2rem .8rem;
   }
   .getit-txt-container {
-    padding: 1rem 1rem 0 1rem
+    padding: 1rem 0 0 0
   }
 }
 

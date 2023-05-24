@@ -54,7 +54,7 @@ function Introduction() {
             <p class='intro-p'>I am a graduate of the Software Development course at Whitecliffe College and excited to build a career as a Full-Stack developer.
               My skills are React, JavaScript, HTML, CSS, Bootstrap, Django Framework with Python as a front-end, and Node, SQL and MongoDB as back-end. I am also an experienced designer.  
               I am excited to apply my skills and creativity on new projects.</p>
-            <button className='btn-white'>About Me</button>
+            <button className='btn-white' id='challenge-btn'>About Me</button>
           </div>
         </div> 
               
@@ -103,8 +103,8 @@ function Projects() {
                  industry  expo.</p>
             </div>
           </div>
-          <div className='home-project-btn'>
-            <Link to="/products">
+          <div className='home-project-btn-container'>
+            <Link to="/products" className='home-project-btn-link'>
               <button className='btn-yellow' id='home-game-btn'>
                 More Projects
               </button>
@@ -128,7 +128,7 @@ function Challenge() {
             rewarding once I the find the solution. 
             I am excited to commence new projects and collaborate in a team.
           </p>
-        <button className='btn-white' id='challenge-color'>About Me</button>  
+        <button className='btn-white' id='challenge-btn'>About Me</button>  
       </div>
     </section>
   )

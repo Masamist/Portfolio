@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* variables */
 :root {
-  --heading-color: #444;
+  --heading-color: #666;
   --text-color: #999;
   --primary-color: #6287E8;
   --secondary-color: #FD7777;
@@ -48,7 +48,7 @@ a{
 }
 @media (max-width: 1250px) {
   .container {
-    margin: auto 1rem;
+    margin: auto 1.5rem;
   }
 }
 

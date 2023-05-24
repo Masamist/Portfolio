@@ -79,7 +79,10 @@
   .home-top-title {
     font-size: 2.3rem;
     line-height: 3rem;
-    padding-left: 1.2rem;
+    padding-left: 0;
+  }
+  .home-top div:first-child {
+    padding: 3rem 2rem;
   }
   
 }
@@ -164,6 +167,9 @@
   }
 }
 @media (max-width: 600px) {
+  .home-intro {
+    padding: 3rem 1.5rem 4rem 1.5rem;
+  }
   .intro-img {
     width: 16rem;
   }
@@ -190,12 +196,13 @@
   float: right;
 }
 .home-project-txt-container {
+  margin: 0;
   padding: 3rem 0;
   width: 60%;
 }
 .home-project-txt {
-  font-size: 1.4rem;
-  line-height: 2.1rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 .home-project-container {
   display: flex;
@@ -209,8 +216,8 @@
 }
 .home-project-container > div > p{
   padding-top: .3rem;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 .home-project-container img {
   border: 1px solid #BFBFBF;
@@ -219,11 +226,12 @@
 }
 .home-project-container h3 {
   color: var(--tertiary-color);
-  font-size: 2.1rem;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 400;
   padding: .5rem 0;
 }
-.home-project-btn {
+
+.home-project-btn-container {
   display: flex;
   justify-content: center;
 }
@@ -264,8 +272,8 @@
     float: left;
   }
   .home-project-txt {
-    font-size: 1.2rem;
-    line-height: 1.7rem;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
   }
   .home-project-txt-container {
     padding: 1.5rem 2rem;
@@ -273,7 +281,7 @@
   }
   .home-project-container > div{
     width: 23rem;
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
   }
   .home-project-container img {
     display: block;
@@ -285,10 +293,10 @@
 @media (max-width: 600px) {
   .home-project-title {
     font-size: 5rem;
-    padding-left: 1rem;
+    padding: 0;
   }
   .home-project-txt-container {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
     width: 100%;
   }
   .home-project-container > div{
@@ -301,15 +309,22 @@
   }
   .home-project-container > div > p{
     padding-top: .2rem;
-    font-size: 1rem;
-    line-height: 1.4rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
   }
-  .home-project-btn {
+  .home-project-btn-link {
     width: 100%;
   }
   #home-game-btn {
     width: 100%;
-    margin: 5rem;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .home-project-title {
+    font-size: 4rem;
+    padding: 0;
   }
 }
 
@@ -359,19 +374,23 @@
   }
   .challenge-txt{
     color: #fff;
-    padding: 3rem 3rem;
+    padding: 3rem 1rem;
     font-size: 1.1rem;
     line-height: 2rem;
   }
 }
 @media (max-width: 550px) {
   .challenge-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .challenge-txt{
     color: #fff;
-    padding: 3rem 1.5rem;
-    font-size: 1rem;
-    line-height: 1.8rem;
+    padding: 3rem 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  #challenge-btn {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
