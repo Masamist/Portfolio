@@ -63,7 +63,6 @@ a{
   align-self: center;
   text-decoration: none;
 }
-
 .btn-yellow {
   background-color: #fff;
   color: var(--tertiary-color);
@@ -97,6 +96,14 @@ a{
   color: #888;
   background: inherit;
   border: .9px solid #888;
+}
+@media (max-width: 600px) {
+  .btn-white {
+    width: 100%;
+  }
+  .btn-yellow {
+    width: 100%;
+  }
 }
 
 /* color */

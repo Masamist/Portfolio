@@ -105,7 +105,7 @@ function Projects() {
           </div>
           <div className='home-project-btn'>
             <Link to="/products">
-              <button className='btn-yellow'>
+              <button className='btn-yellow' id='home-game-btn'>
                 More Projects
               </button>
             </Link>

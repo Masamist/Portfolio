@@ -2,15 +2,21 @@
 import './KPCProject.css'
 
 // images
-import kpcWebsite from '../assets/kpc-website.png'
-import kpcApp from '../assets/kpc-app.png'
+import kpcWebsite from '../assets/kpc_website.png'
+import kpcApp from '../assets/kpc_app.png'
+import kpcDiagram from '../assets/kpc_diagram.png'
+import kpcRole from '../assets/kpc_role.png'
+import kpcWebHome from '../assets/kpc_web_home.png'
+import kpcWebProject from '../assets/kpc_web_project.png'
+import kpcPmsForm from '../assets/kpc_pms_form.png'
+import kpcPmsProjectList from '../assets/kpc_pms_project_list.png'
 
 
 export default function KPCProject() {
   return (
     <>
       <KpcTop />
-      <Requirement />
+      <Details />
     </>
   )
 }
@@ -19,7 +25,7 @@ function KpcTop() {
   return (
     <section className='kpc-top'>
       <div className='kpc-container'>
-        <h1 className='kpc-top-title'>Kauri Point
+        <h1 className='kpc-top-title'>Kauri Point<br />
           Construction Project</h1>
         <p className='kpc-top-txt'>
         Kauri Point Construction is a company based in Auckland 
@@ -36,7 +42,7 @@ function KpcTop() {
             <button className='project-top-button' id='gap'>Code on GitHub</button>
           </a>
           <a href='https://www.kauripointconstruction.co.nz/'>
-            <button className='project-top-button'>Deployed Site</button>
+            <button className='project-top-button' id='kpc-btn'>Deployed Site</button>
           </a>
         </div>
       </div>
@@ -44,11 +50,10 @@ function KpcTop() {
   )
 }
 
-function Requirement() {
+function Details() {
   return (
-    <section className='kpc-req-container '>
-      <div className='container '>
-        <h1 className='kpc-top-title'>Requirement</h1>
+    <section className='kpc-detail-container'>
+      <div className='kpc-detail-item-container'>
         <div className='kpc-img-container'>
           <div>
             <img src={kpcWebsite} alt='Kauri Point Construction Website' />
@@ -56,30 +61,140 @@ function Requirement() {
           <div>
             <img src={kpcApp} alt='Kauri Point Construction App' />
           </div>
-          
+        </div>
+        <h1 className='project-title' id='kpc-detail-title'>Requirement</h1>
+       
+        
+        <div className='kpc-detail-sub-container'>
+          <h2 className='kpc-sub-header'>Problems and Solutions</h2>
+          <p className='project-txt'>
+          The problem is Kauri Point Construction does not have a project 
+          management system everything is currently done manually across many 
+          separate files. For instance, project scheduling is communicated verbally 
+          by the project manager if the plan changes this can result in confusion, 
+          rework and a dissatisfied customer.<br />
+          A successful solution would be introducing a digital solution that 
+          includes process automation and tracking. 
+          The web-based project management system includes the business processes 
+          for project management, workforce scheduling and optimisation, accounting 
+          management, with all the steps in one centralised place, therefore the 
+          project information is always accurate and current. Moreover, 
+          the company focus on sustainability contributes to society and the 
+          community. The solution reduces paper-based documentation saving 
+          valuable resources and decreasing emissions by removing unnecessary 
+          travel due to scheduling errors. 
+          </p>
         </div>
         
+        <div className='kpc-detail-sub-container'>
+          <h2 className='kpc-sub-header'>Context Diagram</h2>
+          <img className='kpc-img-diagram' src={kpcDiagram} alt='Context Diagram' />
+        </div>
+
+        <div className='kpc-detail-sub-container'>
+          <h2 className='kpc-sub-header'>User Roles</h2>
+          <img className='kpc-img-diagram' src={kpcRole} alt='Context Diagram' />
+        </div>
+
+        <div className='kpc-detail-sub-container'>
+          <h2 className='kpc-sub-header'>User Stories</h2>
+          <p className='project-txt'>
+          Client: I want to be able to be out of town for a week and still see how 
+          the project is progressing daily.
+          Manager: I dream of pricing up a job using a library of Tasks I've already executed on projects and re-use data to speed up the process.
+          Manager: I want to record all project details in one place which can be shared with authorised users, so I don’t need to update disparate documents separately.
+          Staff: I like to know that I’ve completed tasks and what’s expected on site for the day.
+          Staff: It would be great to see a previous photo that my workmate took last week, he’s unavailable today.
+          Accountant: As an accountant I like to see where my moneys going and want a detailed breakdown.
+          </p>
+        </div>
+
+        <div className='kpc-detail-sub-container'>
+        <h2 className='kpc-sub-header'>Scope</h2>
+          <p className='project-txt'>
+          Our scope was to build the project management app for the manager which 
+          records each projects details, tasks and estimate cost list, and labour 
+          list which shows estimate days per task by labour. Customer landing 
+          pages were also included in the first release.
+          The workforce management system is in the backlog, as currently they use 
+          an existing online service for staff to clock in and clock out.
+          Accounting system including payroll is out of scope. It will be included 
+          in the next release, or it might integrate to COTs such as Xero or MYOB. 
+          Depending on the financial situation of the construction company, however 
+          the COTs option would be my recommendation to simplify bank 
+          reconciliation and accuracy, avoiding legal issues.
+          </p>
+        </div>
+
+        <h1 className='project-title' id='kpc-detail-title'>Design Solutions</h1>
+
+
         
-        <h2>Problems and Solutions</h2>
-        <p className='kpc-top-txt'>
-        The problem is Kauri Point Construction does not have a project 
-        management system everything is currently done manually across many 
-        separate files. For instance, project scheduling is communicated verbally 
-        by the project manager if the plan changes this can result in confusion, 
-        rework and a dissatisfied customer.<br />
-        A successful solution would be introducing a digital solution that 
-        includes process automation and tracking. 
-        The web-based project management system includes the business processes 
-        for project management, workforce scheduling and optimisation, accounting 
-        management, with all the steps in one centralised place, therefore the 
-        project information is always accurate and current. Moreover, 
-        the company focus on sustainability contributes to society and the 
-        community. The solution reduces paper-based documentation saving 
-        valuable resources and decreasing emissions by removing unnecessary 
-        travel due to scheduling errors. 
-        </p>
+        <div className='kpc-detail-sub-container'>
+          <h2 className='kpc-sub-header'>UI Design example - Website</h2>
+          <div className='kpc-ui-img-container'>
+            <div>
+              <img src={kpcWebHome} alt='Website Homepage' />
+            </div>
+            <div>
+              <img src={kpcWebProject} alt='Website Project page' />
+            </div>
+          </div>
+        </div>
+
+        <div className='kpc-detail-sub-container'>
+          <h2 className='kpc-sub-header'>UI Design example - Project Managament App</h2>
+          <div className='kpc-ui-img-container'>
+            <div>
+              <img src={kpcPmsProjectList} alt='Project Managament App Project List' />
+            </div>
+            <div>
+              <img src={kpcPmsForm} alt='Project Managament App Form' />
+            </div>
+          </div>
+        </div>
         
-        <h2>Context Diagram</h2>
+        <h1 className='project-title' id='kpc-detail-title'>Development</h1>
+
+
+        <div className='kpc-detail-sub-container'>
+          <h2 className='kpc-sub-header'>My role</h2>
+          <p className='project-txt'>
+          This was a large-scale project that I successfully completed with a 
+          classmate, we worked together to create and deploy the web application, 
+          it was a significant undertaking as it would normally be assigned to a 
+          team of 4 to 5 students. My roles were business analyst, I researched 
+          and created the business and solution requirements and populated each 
+          document, UI designer design including mock-ups. My main role was 
+          back-end developer. We decided to use React JS as our web framework 
+          and Firebase for our database. I considered utilizing Node JS as the 
+          back end; however Firebase has authentication including web token and 
+          React hooks simplifies firebase implementation. React and Firebase are 
+          a good combination for a project of this size and enabled us to complete 
+          the project on a tight schedule. This was my first-time using Firebase 
+          it was both challenging and rewarding.
+          </p>
+        </div>
+
+        <div className='kpc-detail-sub-container'>
+          <h2 className='kpc-sub-header'>Summary</h2>
+          <p className='project-txt'>
+          Overall, the project went extremely well, our team showcased our skills, 
+          we learnt a lot and the client was very impressed with the web 
+          application. Projects are always challenging, the code does not work 
+          sometimes, the reward is resolving the issues and bugs.
+          </p>
+        </div>
+
+        <div className='project-top-link'>
+          <a href='https://github.com/Masamist/KauriPointConstruction'>
+            <button className='project-top-button' id='gap'>Code on GitHub</button>
+          </a>
+          <a href='https://www.kauripointconstruction.co.nz/'>
+            <button className='project-top-button' id='kpc-btn'>Deployed Site</button>
+          </a>
+        </div>
+
       </div>
     </section>
   )

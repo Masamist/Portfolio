@@ -304,7 +304,15 @@
     font-size: 1rem;
     line-height: 1.4rem;
   }
+  .home-project-btn {
+    width: 100%;
+  }
+  #home-game-btn {
+    width: 100%;
+    margin: 5rem;
+  }
 }
+
 
 /* challenge */
 .home-challenge {
