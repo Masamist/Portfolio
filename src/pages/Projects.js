@@ -141,9 +141,7 @@ function GetItPython() {
               a tester to make several unit tests, UAT testing, cross-browser testing. 
               Also, I coded the whole social Q&A page which was a great opportunity 
               to create a social interactive page.</p>
-            <div className='tool-icons-container'>
               <img className='tool-icons' src={tools_getit} alt='Tool icons' />
-            </div>
             <div className='project-single-link'>
               <a href='https://github.com/Masamist/Get_It_Python_Project'>
                 <button className='project-single-button' id='gap'>Code on GitHub</button>
@@ -224,12 +222,12 @@ function HappyChick() {
             <img src={game} alt='Happy Chick' className='game-image' />
           </div>
         </div>
-        <div className='poster-container'>
-          <div>
-            <img src={game} alt='Happy Chick' className='game-image' />
-          </div>
-          <div className='getit-txt-container'>
-            <p className='project-txt'>The main character is a super cute chick which is 
+      </div>
+      <div className='container'>
+        <div className='project-img-container'>
+            <img src={game} alt='Happy Chick' className='game-image' id='game-image-space' />
+            <p>
+            The main character is a super cute chick which is 
             a bit lonely and bored with his normal life, and he is dreaming about 
             exploring outside his small world. One day he decided to get out of his 
             house and travel around to experience life. During the trip he meets many 
@@ -238,13 +236,16 @@ function HappyChick() {
             collecting these unique items, also a few secret items. At the end of the trip, 
             he would become a super happy chick with many friends and found a wonderful 
             girlfriend.</p>
-            <img className='game-icons' src={tools_game} alt='Tool icons' />
+            <div className='tool-icons-container'>
+              <img className='game-tools-icons' src={tools_game} alt='Tool icons' />
+            </div>
+            
             <div className='project-single-link'>
               <a href='https://github.com/Masamist/HappyChick'>
                 <button className='game-button' id='gap'>Code on GitHub</button>
               </a>
             </div>
-          </div>
+            
         </div>
       </div>
         
@@ -271,7 +272,7 @@ function DigitalResources() {
               We built this application with Django web framework and MongoBD 
               as the database.</p>
           <div className='tool-icons-container'>
-            <img className='tool-icons' src={tools_dresources} alt='Tool icons' />
+            <img className='tool-icons' id='tool-icon-resource' src={tools_dresources} alt='Tool icons' />
           </div>
           
           <div className='project-single-link'>
@@ -347,7 +348,7 @@ function Tradies() {
             routine and we successfully improved how we communicated with each other. </p>
             
           <div className='tool-icons-container'>
-            <img className='tool-icons' src={tools_tradies} alt='Tool icons' />
+            <img className='tool-icons' id='icon-tradies' src={tools_tradies} alt='Tool icons' />
           </div>
           <div className='project-single-link'>
             <a href='https://github.com/Masamist/tradies'>
