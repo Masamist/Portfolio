@@ -445,7 +445,7 @@
 /* Happy Chick */
 .game {
   width: 100%;
-  padding: 2.5rem 0 0 0;
+  padding: 2.5rem 0 02.5rem 0;
   background-color: var(--tertiary-color);
   display: flex;
   flex-direction: column;
@@ -511,7 +511,8 @@
     padding: 0;
   }
   #game-image-space {
-    padding-bottom: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 3rem;
   }
 
 }
@@ -644,9 +645,15 @@
   background-color: #756229;
   border: 2px solid #756229;
 }
-#tradie_img {
+.tradie-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tradie-img {
+  display: block;
   margin-top: 2.5rem;
-  border: 1px solid #ccc;
+  width: 30rem;
 }
 @media (max-width: 600px) {
   #icon-tradies {
@@ -657,6 +664,10 @@
     padding: .5rem 0;
     margin: .6rem 0;
     font-size: 1.1em;
+  }
+  .tradie-img {
+    margin-top: 2rem;
+    width: 100%;
   }
 }
 
@@ -703,7 +714,6 @@
 
 
 
-
 /* Sugar Sumash */
 #suger-smash-txt-color {
   color: #F2994A;
@@ -733,8 +743,32 @@
   font-size: 1.7rem;
   padding: 1rem 0;
 }
+@media (max-width: 1250px) {
+  .sugar-smash-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sugar-smash-container > div {
+    width: 22rem;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 450px) {
+  .sugar-smash-container > div {
+    width: 100%;
+  }
+  .sugar-smash-container > div img {
+    width: 100%;
+  }
+}
+
 
 /* Others */
+.others {
+  width: 100%;
+  padding: 4rem 0 2rem 0;
+  background-color: var(--primary-color);
+}
 .others-title {
   font-size: 4rem;
   font-weight: 300;
@@ -744,12 +778,45 @@
 .others-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding: 2rem 0;
 }
 #content-left {
   padding-right: 33rem;
 }
 #content-right {
-  padding-left: 30rem;
+  padding-left: 33rem;
 }
-
+@media (max-width: 1200px) {
+  .others {
+    padding: 4rem 3rem 3rem 3rem;
+  }
+  #content-left {
+    padding-right: 25rem;
+  }
+  #content-right {
+    padding-left: 25rem;
+  }
+}
+@media (max-width: 900px) {
+  .others-title {
+    font-size: 3.5rem;
+  }
+  #content-left {
+    padding-right: 15rem;
+  }
+  #content-right {
+    padding-left: 15rem;
+  }
+}
+@media (max-width: 600px) {
+  .others-title {
+    font-size: 3rem;
+    text-align: start;
+  }
+  #content-left {
+    padding-right: 0;
+  }
+  #content-right {
+    padding-left: 0;
+  }
+}

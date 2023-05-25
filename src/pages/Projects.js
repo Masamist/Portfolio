@@ -359,9 +359,12 @@ function Tradies() {
             </a>
           </div>
         </div>
-          <img id='tradie_img' src={tradie1} alt='Tradies Mock-up' />
-          <img id='tradie_img' src={tradie2} alt='Tradies Mock-up' />
-          <img id='tradie_img' src={tradie3} alt='Tradies Mock-up' />        
+        <div className='tradie-image-container'>
+          <img className='tradie-img' src={tradie1} alt='Tradies Mock-up' />
+          <img className='tradie-img' src={tradie2} alt='Tradies Mock-up' />
+          <img className='tradie-img' src={tradie3} alt='Tradies Mock-up' />     
+        </div>
+             
       </div>
     </section>
   )
