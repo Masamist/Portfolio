@@ -13,6 +13,7 @@ import tools_getit from '../assets/tools_getit.png'
 import poco from '../assets/poco.png'
 import tools_poco from '../assets/tools_poco.png'
 import game from '../assets/project_happy_chick.png'
+import game_video from '../assets/happy_chick.mp4'
 import tools_game from '../assets/tools_game.png'
 import dresources from '../assets/digital_resources.png'
 import tools_dresources from '../assets/tools_digital_resources.png'
@@ -219,13 +220,14 @@ function HappyChick() {
             setting up goals and so on. </p>
           </div>
           <div>
-            <img src={game} alt='Happy Chick' className='game-image' />
+            <img src={game} alt='Happy Chick' className='game-image' id='game-image-space' />
           </div>
         </div>
       </div>
       <div className='container'>
         <div className='project-img-container'>
-            <img src={game} alt='Happy Chick' className='game-image' id='game-image-space' />
+            <video src={game_video} width='750' height='500' controls>
+            </video>
             <p>
             The main character is a super cute chick which is 
             a bit lonely and bored with his normal life, and he is dreaming about 
@@ -451,7 +453,7 @@ function SugerSmash() {
 
 function Others() {
   return (
-    <section className='GeyIt'>
+    <section className='others'>
       <div className='container'>
         <h1 className='others-title'>Additional learnings</h1>
         <div className='others-container' id='content-left'>

@@ -1,4 +1,5 @@
-
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 // style
 import './About.css'
 
@@ -37,7 +38,7 @@ function Experience() {
   return (
     <section className='about-top'>
       <div className='about-ex-wrap'>
-        <div className='about-ex-container'>
+        <div className='about-ex-container' id='about-ex-container-gap'>
           <div>
             <h2 className='about-ex-category'>Career Summary</h2>
           </div>
@@ -108,38 +109,45 @@ function Experience() {
             communication with design knowledge. 
             </p>
           </div>
-
-        </div>
-        <div>
-          <a href='https://www.kauripointconstruction.co.nz/'>
-            <button className='about-cv-button' id='right'>Open CV PDF</button>
-          </a>
-        </div> 
-        
+        </div>        
       </div> 
     </section>
   )
 }
 
 function Contact() {
+
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_u9hskvs', 'template_o3am5bl', form.current, 'hF_d4SsKrqGQ5h0Hb')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      })
+  }
+
+  // npm i @emailjs/browser
+
   return (
     <section className='about-top' id='contact-bg-color'>
-      <div className='about-container'>
+      <div className='contact-container'>
         <h1 className='contact-title'>I’d love to hear from you!</h1>
         <p className='contact-txt'>If you have anything to share your though or offer,<br />
           please send me a message. I will replay you soon.
         </p>
-        <form className='form'>
+        <div className='form-container'></div>
+        <form className='form' ref={form} onSubmit={sendEmail}>
           <h2 className='contact-form-title'>Contact Me</h2>
-          <input type='text' placeholder='name'></input>
-          <input type='email' placeholder='Email Address'></input>
-          <textarea placeholder='Message'></textarea>
-          <button className='about-cv-button'>Submit</button>
+          <input type='text' placeholder='name' name='user_name' />
+          <input type='email' placeholder='Email Address' name='user_email' />
+          <textarea placeholder='Message' name='message' />
+          <button className='about-btn' type='submit' value='Send'>Submit</button>
         </form>
-
-        </div>
+      </div>
     </section>
   )
 }
-
-
