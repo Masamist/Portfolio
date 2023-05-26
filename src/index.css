@@ -100,9 +100,11 @@ a{
 @media (max-width: 600px) {
   .btn-white {
     width: 100%;
+    font-size: 1em;
   }
   .btn-yellow {
     width: 100%;
+    font-size: 1em;
   }
 }
 
@@ -137,6 +139,7 @@ input, textarea {
   box-sizing: border-box;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
 }
 textarea {
   min-height: 160px;

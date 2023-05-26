@@ -74,7 +74,7 @@ function Kpc() {
           <img src={kpc} alt='Kauri Point Construction' />
           <h3 className='sub-title'>Web Software Project</h3>
           <h1 className='project-title' id='kpc-image'>Kauri Point Construction</h1>
-          <p>This project is the final project of the Software Development Course. 
+          <p className='project-txt'>This project is the final project of the Software Development Course. 
             It was group work and we had an actual client, Simon, 
             who started  his own construction company a few years ago in Auckland. 
             The request was to create a project management app and also 
@@ -141,7 +141,7 @@ function GetItPython() {
               a tester to make several unit tests, UAT testing, cross-browser testing. 
               Also, I coded the whole social Q&A page which was a great opportunity 
               to create a social interactive page.</p>
-              <img className='tool-icons' src={tools_getit} alt='Tool icons' />
+              <img className='tool-icons' id='tool-getit-icon' src={tools_getit} alt='Tool icons' />
             <div className='project-single-link'>
               <a href='https://github.com/Masamist/Get_It_Python_Project'>
                 <button className='project-single-button' id='gap'>Code on GitHub</button>
@@ -166,7 +166,7 @@ function Poco() {
           <img src={poco} alt='Poco a Poco' />
           <h3 className='sub-title'>CMS Web Project</h3>
           <h1 className='project-title' id='poco-color'>poco a poco hair saloon</h1>
-          <p>This Web project was to create a website using a Content Management System (CMS). 
+          <p className='project-txt'>This Web project was to create a website using a Content Management System (CMS). 
             The client is ‘poco a poco’ hair saloon located in Newmarket, 
             Auckland. Poco a poco takes reservations by phone, which sometimes creates 
             mistakes such as double bookings or writing down the wrong date or time, 
@@ -228,7 +228,7 @@ function HappyChick() {
             <video controls>
               <source src='https://firebasestorage.googleapis.com/v0/b/portfolio-2f0a8.appspot.com/o/happy_chick.mp4?alt=media&token=2d6df508-3b3a-4c89-925e-14cac10a7874' type='video/mp4' />
             </video>
-            <p>
+            <p className='project-txt'>
             The main character is a super cute chick which is 
             a bit lonely and bored with his normal life, and he is dreaming about 
             exploring outside his small world. One day he decided to get out of his 
@@ -263,7 +263,7 @@ function DigitalResources() {
           <img id='dresources_img' src={dresources} alt='Whitecliffe Digital Resources' />
           <h3 className='sub-title'>Web Academic Library Project</h3>
           <h1 className='project-title' id='dresources-color'>Whitecliffe Digital Resources</h1>
-          <p>This project is a team project to create online digital resources 
+          <p className='project-txt'>This project is a team project to create online digital resources 
               for an lerning institution.
               This Whitecliffe Digital Resources project is a group project. 
               I worked as the front-end and UI designer. 
@@ -278,13 +278,10 @@ function DigitalResources() {
           </div>
           
           <div className='project-single-link'>
-              <a href='https://github.com/Masamist/Get_It_Python_Project'>
-                <button className='dresources-button' id='gap'>Code on GitHub</button>
-              </a>
-              <a href='https://github.com/Masamist/Get_It_Python_Project'>
-                <button className='dresources-button'>Code on GitHub</button>
-              </a>
-            </div>
+            <a href='https://github.com/Masamist/Get_It_Python_Project'>
+              <button className='dresources-button'>Code on GitHub</button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -298,7 +295,7 @@ function AMS() {
         <div className='project-img-container'>
           <h3 className='sub-title'>Xamarine Mobile App Development</h3>
           <h1 className='project-title' id='ams-color'>AMS Mobile App</h1>
-          <p>AMS (Auckland Merchandise Systems) is a company which provides a 
+          <p className='project-txt'>AMS (Auckland Merchandise Systems) is a company which provides a 
             merchandising service to various retailers. The service has conditions 
             such as day, agreed location and display method which are agreed with 
             the clients. AMS requirement was to build a mobile app to gain 
@@ -320,7 +317,7 @@ function AMS() {
           
           <div className='project-single-link'>
               <a href='https://github.com/Masamist/Get_It_Python_Project'>
-                <button className='ams-button' id='gap'>Code on GitHub</button>
+                <button className='ams-button'>Code on GitHub</button>
               </a>
             </div>
         </div>
@@ -336,7 +333,7 @@ function Tradies() {
         <div className='project-img-container'>
           <h3 className='sub-title' id='tradie-txt-color'>Business Analysis + Web Project</h3>
           <h1 className='project-title' id='tradie-txt-color'>Tradies Web Service</h1>
-          <p>This project was to establish a new web service called “Tradies” 
+          <p className='project-txt'>This project was to establish a new web service called “Tradies” 
             which enables customers to search for a contractor online and send a 
             request. Registered “Tradies” contractors who are signed up to the app 
             could then be notified when there are available jobs, which if they 
@@ -380,7 +377,7 @@ function EyeCandyCinema() {
           <img src={cinema} alt='Eye Candy Cinema' />
           <h3 className='sub-title'>Web Project</h3>
           <h1 className='project-title' id='cinema-txt-color'>Eye Candy Cinema</h1>
-          <p>This is an individual assignment and the first website I created at 
+          <p className='project-txt'>This is an individual assignment and the first website I created at 
             Whitecliffe utilising simple HTML, CSS and JavaScript. A website for 
             a cinema called Eye Candy Cinema which is a local cinema specializing 
             in international film festival movies and some indie movies. 
@@ -414,7 +411,7 @@ function SugerSmash() {
         <div className='project-img-container'>
           <h3 className='sub-title'>Professional Practice</h3>
           <h1 className='project-title' id='suger-smash-txt-color'>Sugar Smash</h1>
-          <p>My first group project at Whitecliffe. This project was to define 
+          <p className='project-txt'>My first group project at Whitecliffe. This project was to define 
             a world problem, research and discover a solution with team mates. 
             The problem we selected was sugar consumption and health issues. 
             Sugar can be a cause of poor health, obesity, and diabetes.

@@ -90,12 +90,15 @@
     padding: 10rem 1rem;
   }
   .kpc-top-title{
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
   .kpc-top-txt {
     font-size: 1.1rem;
     line-height: 1.7rem;
+  }
+  .project-top-button {
+    font-size: 1em;
   }
 }
 

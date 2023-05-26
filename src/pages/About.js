@@ -137,12 +137,12 @@ function Contact() {
       <div className='contact-container'>
         <h1 className='contact-title'>I’d love to hear from you!</h1>
         <p className='contact-txt'>If you have anything to share your though or offer,<br />
-          please send me a message. I will replay you soon.
+          please send me a message. I will reply you soon.
         </p>
         <div className='form-container'></div>
         <form className='form' ref={form} onSubmit={sendEmail}>
           <h2 className='contact-form-title'>Contact Me</h2>
-          <input type='text' placeholder='name' name='user_name' />
+          <input type='text' placeholder='Name' name='user_name' />
           <input type='email' placeholder='Email Address' name='user_email' />
           <textarea placeholder='Message' name='message' />
           <button className='about-btn' type='submit' value='Send'>Submit</button>
