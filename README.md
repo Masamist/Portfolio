@@ -1,6 +1,6 @@
 # Portfolio
 
-[My Portfolio website](https://github.com/facebook/create-react-app](https://portfolio-2f0a8.web.app/).
+[My Portfolio website](https://portfolio-2f0a8.web.app/).
 
 ## Available Scripts
 
