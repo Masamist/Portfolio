@@ -47,14 +47,16 @@ function Introduction() {
           </div>
         
           <div>
-            <h2 class='intro-header'>
+            <h2 className='intro-header'>
               My passion is in Web Development <br />
               and UX UI Design
             </h2>
-            <p class='intro-p'>I am a graduate of the Software Development course at Whitecliffe College and excited to build a career as a Full-Stack developer.
+            <p className='intro-p'>I am a graduate of the Software Development course at Whitecliffe College and excited to build a career as a Full-Stack developer.
               My skills are React, JavaScript, HTML, CSS, Bootstrap, Django Framework with Python as a front-end, and Node, SQL and MongoDB as back-end. I am also an experienced designer.  
               I am excited to apply my skills and creativity on new projects.</p>
-            <button className='btn-white' id='challenge-btn'>About Me</button>
+              <Link to="/about">
+                <button className='btn-white' id='challenge-btn'>About Me</button>
+              </Link>
           </div>
         </div> 
               
@@ -104,7 +106,7 @@ function Projects() {
             </div>
           </div>
           <div className='home-project-btn-container'>
-            <Link to="/products" className='home-project-btn-link'>
+            <Link to="/projects">
               <button className='btn-yellow' id='home-game-btn'>
                 More Projects
               </button>
@@ -128,7 +130,9 @@ function Challenge() {
             rewarding once I the find the solution. 
             I am excited to commence new projects and collaborate in a team.
           </p>
-        <button className='btn-white' id='challenge-btn'>About Me</button>  
+          <Link to="/about">
+            <button className='btn-white' id='challenge-btn'>About Me</button>  
+          </Link> 
       </div>
     </section>
   )

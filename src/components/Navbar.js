@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
       <nav className='nav-container'>
         <div className='navbar'>
-          <div class='logo-container'>
+          <div className='logo-container'>
             <span className='logo'>Masami<br/>Stonebridge</span>
           </div>
           <div>

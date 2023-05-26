@@ -7,11 +7,13 @@ import Projects from './pages/Projects'
 import KPCProject from './pages/KPCProject'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/scrollToTop';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

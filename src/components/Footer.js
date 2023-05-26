@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className='footer'>
       <div>
-        <div class='footer-logo-container'>
+        <div className='footer-logo-container'>
           <span className='footer-logo'>Masami<br/>Stonebridge</span>
         </div>
         <div>
@@ -21,8 +21,12 @@ export default function Footer() {
         </div>
       </div>
       <div className='footer-copyright'>
-        <a href='https://github.com/Masamist?tab=repositories'><img src={github} alt='GitHub' /></a>
-        <a href='https://www.linkedin.com/in/masami-stonebridge-a9342a275/'><img src={linkedin} alt='LinkedIn' /></a> 
+        <a href='https://github.com/Masamist?tab=repositories'>
+          <img src={github} alt='GitHub' />
+        </a>
+        <a href='https://www.linkedin.com/in/masami-stonebridge-a9342a275/'>
+          <img src={linkedin} alt='LinkedIn' />
+        </a> 
         <p>
           2023 Masami Stonebridge Portfolio, All Rights Reserved
         </p>
