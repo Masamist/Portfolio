@@ -124,8 +124,8 @@
     padding: .8rem 0 1rem 0;
   }
   .project-txt {
-    font-size: 1.3rem;
-    line-height: 1.9rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
   .project-single-button {
     width: 100%;
@@ -147,12 +147,16 @@
     padding: .8rem 0 1rem 0;
   }
   .project-title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 3rem;
     padding: .8rem 0 1rem 0;
   }
   .project-txt-container {
     padding: 1rem .5rem;
+  }
+  .project-txt {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
   }
 
 }
