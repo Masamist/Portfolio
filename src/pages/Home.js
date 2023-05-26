@@ -106,7 +106,7 @@ function Projects() {
             </div>
           </div>
           <div className='home-project-btn-container'>
-            <Link to="/projects">
+            <Link to="/projects" className='home-project-btn-link'>
               <button className='btn-yellow' id='home-game-btn'>
                 More Projects
               </button>
@@ -130,9 +130,12 @@ function Challenge() {
             rewarding once I the find the solution. 
             I am excited to commence new projects and collaborate in a team.
           </p>
-          <Link to="/about">
-            <button className='btn-white' id='challenge-btn'>About Me</button>  
+          <div className='home-project-btn-container'>
+          <Link to="/about" className='home-project-btn-link'>
+            <button className='btn-white' id='challenge-btn' >About Me</button>  
           </Link> 
+          </div>
+          
       </div>
     </section>
   )
