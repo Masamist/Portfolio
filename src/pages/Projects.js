@@ -13,7 +13,6 @@ import tools_getit from '../assets/tools_getit.png'
 import poco from '../assets/poco.png'
 import tools_poco from '../assets/tools_poco.png'
 import game from '../assets/project_happy_chick.png'
-import game_video from '../assets/happy_chick.mp4'
 import tools_game from '../assets/tools_game.png'
 import dresources from '../assets/digital_resources.png'
 import tools_dresources from '../assets/tools_digital_resources.png'
@@ -188,10 +187,10 @@ function Poco() {
           </div>
           
           <div className='project-single-link'>
-            <a href='https://github.com/Masamist/Get_It_Python_Project'>
+            <a href='https://github.com/Masamist/PocoAPocoHairSaloon'>
               <button className='project-poco-button' id='gap'>Code on GitHub</button>
             </a>
-            <a href='https://github.com/Masamist/Get_It_Python_Project'>
+            <a href='https://masamist.github.io/PocoAPocoHairSaloon/index.html'>
               <button className='project-poco-button'>Code on GitHub</button>
             </a>
           </div>
@@ -226,7 +225,8 @@ function HappyChick() {
       </div>
       <div className='container'>
         <div className='project-img-container'>
-            <video src={game_video} width='750' height='500' controls>
+            <video controls>
+              <source src='https://firebasestorage.googleapis.com/v0/b/portfolio-2f0a8.appspot.com/o/happy_chick.mp4?alt=media&token=2d6df508-3b3a-4c89-925e-14cac10a7874' type='video/mp4' />
             </video>
             <p>
             The main character is a super cute chick which is 

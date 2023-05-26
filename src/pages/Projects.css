@@ -476,6 +476,7 @@
 .project-img-container video {
   width: 100%;
   height: auto;
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 .getit-txt-container{
