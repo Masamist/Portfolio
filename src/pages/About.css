@@ -8,7 +8,7 @@
 }
 .about-container {
   width: 47rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .about-top-title {
@@ -28,7 +28,7 @@
 @media (max-width: 1200px) {
   .about-top {
     width: 100%;
-    padding: 4rem 5rem;
+    padding: 4rem 5rem 2rem 5rem;
   }
   .about-top-txt {
     font-size: 1.4rem;
@@ -38,6 +38,9 @@
 @media (max-width: 900px) {
   .about-top {
     padding: 3rem 3rem;
+  }
+  .about-container {
+    padding-bottom: 1rem;
   }
   .about-top-title {
     font-size: 3.8rem;
@@ -82,7 +85,7 @@
 }
 .about-ex-container {
   width: 47rem;
-  padding: 5rem 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: row;
   gap: 4%;

@@ -48,17 +48,10 @@ function Experience() {
           <div>
             <h3 className='about-ex-title'>Bisco Japan | Graphic Designer</h3>
             <p className='about-ex-year-info'>Tokyo, Japan | Mar 2001 - Jan 2004</p>
-            <ul>
-              <li>
-                - Designing advertisements, magazines, products, leaflets and company stationery.
-              </li>
-              <li>
-                - Planning commercials.
-              </li>
-              <li>
-                - Including quotes, marketing and sales.
-              </li>
-            </ul>
+            <p className='about-ex-txt'>
+              Designing advertisements, magazines, products, leaflets and company stationery. 
+              Planning commercials. Including quotes, marketing and sales.
+            </p>
           </div>
         </div>
         <div className='about-ex-container'>
