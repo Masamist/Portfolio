@@ -4,11 +4,11 @@
   justify-content: center;
   width: 100%;
   padding-left: 5rem;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
 }
 .about-container {
   width: 47rem;
-  padding-bottom: 8rem;
+  padding-bottom: 2rem;
 }
 
 .about-top-title {
@@ -55,7 +55,7 @@
     line-height: 4rem;
   }
   .about-top {
-    padding: 2.5rem 1rem;
+    padding: 0 1rem 2.5rem 1rem;
   }
   .about-top-txt {
     font-size: 1.2rem;
@@ -67,9 +67,6 @@
   .about-top-title {
     font-size: 2.6rem;
     line-height: 3.5rem;
-  }
-  .about-top {
-    padding: 2.5rem 1rem;
   }
   .about-top-txt {
     font-size: 1.2rem;

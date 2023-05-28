@@ -25,7 +25,6 @@
 .project-txt {
   font-size: 1.4rem;
   line-height: 2.1rem;
-  padding: 1rem;
 }
 .tool-icons-container {
   display: flex;
@@ -79,7 +78,7 @@
 @media (max-width: 1200px) {
   .project-txt {
     font-size: 1.3rem;
-    line-height: 2.1rem;
+    line-height: 2rem;
   }
   .project-txt-container {
     padding: 3rem 0;
@@ -89,7 +88,7 @@
 }
 @media (max-width: 900px) {
   .project-wrap {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   .project-txt-container {
     padding: 2.5rem 0;
@@ -115,14 +114,14 @@
     padding-top: 2rem;
   }
   .project-txt-container {
-    padding: 2rem .5rem;
+    padding: .5rem .5rem;
     width: 100%;
     float: inline-start;
   }
   .project-title {
     font-size: 2.8rem;
-    line-height: 3.3rem;
-    padding: .8rem 0 1rem 0;
+    line-height: 3rem;
+    padding: .8rem 0 .5rem 0;
   }
   .project-txt {
     font-size: 1.2rem;
@@ -173,7 +172,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 6rem 20rem;
+  padding: 5.5rem 20rem;
 }
 .project-top-title {
   color: var(--primary-color);
@@ -194,7 +193,7 @@
 }
 @media (max-width: 1200px) {
   .project-top {
-    padding: 5rem 5rem ;
+    padding: 4rem 5rem 1rem 5rem ;
   }
   .project-top-title {
     font-size: 10rem;
@@ -202,7 +201,7 @@
 }
 @media (max-width: 900px) {
   .project-top {
-    padding: 4rem 4rem;
+    padding: 3rem 4rem 0 5rem;
   }
   .project-top-title {
     font-size: 7rem;
@@ -210,7 +209,7 @@
 }
 @media (max-width: 600px) {
   .project-top {
-    padding: 3rem 1.5rem;
+    padding: 0 1rem;
   }
   .project-top-title {
     font-size: 5rem;
@@ -221,7 +220,7 @@
     padding: 2rem 1rem;
   }
   .project-top-title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -462,7 +461,7 @@
 /* Happy Chick */
 .game {
   width: 100%;
-  padding: 2.5rem 0 02.5rem 0;
+  padding: 2.5rem 0 2.5rem 0;
   background-color: var(--tertiary-color);
   display: flex;
   flex-direction: column;
@@ -513,40 +512,60 @@
   padding-bottom: 2rem;
 }
 @media (max-width: 1400px) {
+  .game {
+    width: 100%;
+    padding: 0;
+  }  
   .game-container {
     flex-direction: column-reverse;
     align-items: center;
-    padding: 4rem 10rem;
+    padding: 3rem 5rem;
     gap:none;
   }
   .game-image {
     width: 100%;
   }
+  #game-image-space {
+    margin-bottom: 0;
+  }
+  
 }
 @media (max-width: 1200px) {
   .game-container {
     flex-direction: column-reverse;
     align-items: center;
-    padding: 4rem 3rem;
+    padding: 3rem 5rem;
   }
   .game-image {
     width: 100%;
     padding: 0;
   }
-  #game-image-space {
-    padding-bottom: 0;
-    margin-bottom: 3rem;
+  .project-img-container video {
+    padding-top: 0;
+    padding-bottom: 2rem;
   }
 
 }
 @media (max-width: 900px) {
+  .game-container {
+    padding: 3rem 3rem;
+  }
   .getit-txt-container{
     width: 100%;
   }
+  .game-image {
+    margin-top: 3rem;
+  }
+  .game-button {
+    margin-bottom: 5rem;
+  }
 }
 @media (max-width: 600px) {
+  .game {
+    padding-bottom: 1rem;
+  }  
   .game-container {
-    padding: 3rem 0;
+    padding: 0 0 1.8rem 0;
   }
   .game-tools-icons {
     width: 6rem;
@@ -554,11 +573,10 @@
   .game-button {
     font-size: 1rem;
   }
-
 }
 @media (max-width: 450px) {
   .game-container {
-    padding: 1.5rem 0;
+    padding: 0 0 1.5rem 0;
   }
 }
 

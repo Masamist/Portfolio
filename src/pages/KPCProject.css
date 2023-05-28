@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 90vh;
+  height: 77vh;
   background-image: url('../assets/kpc_bg_image.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -11,7 +11,7 @@
 }
 .kpc-container {
   max-width: 55rem;
-  padding: 15rem 5rem;
+  padding: 17rem 5rem 0 5rem;
 }
 .kpc-top-title{
   font-size: 4rem;
@@ -54,11 +54,10 @@
 }
 @media (max-width: 1300px) {
   .kpc-top {
-    height: 90vh;
+    height: auto;
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 100%;
-    margin-top: 1rem;
+    height: 75vh;
   }
 }
 @media (max-width: 900px) {
@@ -67,7 +66,8 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100%;
-    margin-top: 1rem;
+    height: 63vh;
+    margin-top: 0;
   }
   .kpc-container {
     max-width: 100%;
@@ -83,9 +83,6 @@
   }
 }
 @media (max-width: 600px) {
-  .kpc-top {
-    margin-top: 0;
-  }
   .kpc-container {
     padding: 10rem 1rem;
   }
@@ -125,12 +122,11 @@
   border: 1px solid #999;
 }
 .kpc-detail-sub-container {
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 .kpc-sub-header {
   font-weight: 400;
   font-size: 2rem;
-  padding-bottom: 1.5rem;
 }
 .kpc-img-diagram {
   width: 100%;
@@ -164,10 +160,19 @@
     width: 100%;
     padding: 1rem 0 2rem 0;
   }
+  #kpc-detail-title{
+    margin-top: 4rem;
+  }
 }
 @media (max-width: 900px) {
   .kpc-detail-item-container {
     padding: 0 3rem;
+  }
+  #kpc-detail-title{
+    margin-top: 3rem;
+  }
+  .kpc-sub-header {
+    padding-bottom: .6rem;
   }
 }
 @media (max-width: 600px) {
