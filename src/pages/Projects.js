@@ -278,7 +278,7 @@ function DigitalResources() {
           </div>
           
           <div className='project-single-link'>
-            <a href='https://github.com/Masamist/Get_It_Python_Project'>
+            <a href='https://github.com/Masamist/DigitalResourceProject'>
               <button className='dresources-button'>Code on GitHub</button>
             </a>
           </div>
