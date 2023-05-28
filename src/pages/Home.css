@@ -107,7 +107,7 @@
 }
 .intro-p {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   padding: 2rem 0;
 }
@@ -123,8 +123,8 @@
     line-height: 3.2rem;
   }
   .intro-p {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
     padding: 2rem 0;
   }
 }
@@ -201,8 +201,8 @@
   width: 60%;
 }
 .home-project-txt {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 }
 .home-project-container {
   display: flex;
@@ -216,8 +216,8 @@
 }
 .home-project-container > div > p{
   padding-top: .3rem;
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
 }
 .home-project-container img {
   border: 1px solid #BFBFBF;
@@ -309,8 +309,8 @@
   }
   .home-project-container > div > p{
     padding-top: .2rem;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
   }
   .home-project-btn-link {
     width: 100%;

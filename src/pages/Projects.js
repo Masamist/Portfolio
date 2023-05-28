@@ -315,11 +315,11 @@ function AMS() {
             <img className='tool-icons' id='ams-tools-icon' src={tools_ams} alt='Tool icons' />
           </div>
           
-          <div className='project-single-link'>
-              <a href='https://github.com/Masamist/Get_It_Python_Project'>
-                <button className='ams-button'>Code on GitHub</button>
-              </a>
-            </div>
+          {/* <div className='project-single-link'>
+            <a href='https://github.com/Masamist/Get_It_Python_Project'>
+              <button className='ams-button'>Code on GitHub</button>
+            </a>
+          </div> */}
         </div>
       </div>
     </section>
@@ -338,7 +338,7 @@ function Tradies() {
             request. Registered “Tradies” contractors who are signed up to the app 
             could then be notified when there are available jobs, which if they 
             decided to take, then they can communicate with the customer with 
-            regards to location, time and cost. 
+            regards to location, time and cost.<br />
             The group work was identifying the business and solution requirements 
             includes user stories, context and activity sequence diagram, and 
             individual tasks of UX design and  building the web service. 

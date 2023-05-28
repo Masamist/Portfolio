@@ -23,8 +23,8 @@
   float: inline-end;
 }
 .project-txt {
-  font-size: 1.5rem;
-  line-height: 2.3rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
   padding: 1rem;
 }
 .tool-icons-container {
@@ -78,8 +78,8 @@
 }
 @media (max-width: 1200px) {
   .project-txt {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
   }
   .project-txt-container {
     padding: 3rem 0;
