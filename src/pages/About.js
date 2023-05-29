@@ -50,7 +50,7 @@ function Experience() {
             <p className='about-ex-year-info'>Tokyo, Japan | Mar 2001 - Jan 2004</p>
             <p className='about-ex-txt'>
               Designing advertisements, magazines, products, leaflets and company stationery. 
-              Planning commercials. Including quotes, marketing and sales.
+              Planning commercials including quotes, marketing and sales.
             </p>
           </div>
         </div>
@@ -132,8 +132,8 @@ function Contact() {
     <section className='about-top' id='contact-bg-color'>
       <div className='contact-container'>
         <h1 className='contact-title'>I’d love to hear from you!</h1>
-        <p className='contact-txt'>If you have anything to share your though or offer,<br />
-          please send me a message. I will reply you soon.
+        <p className='contact-txt'>Share your thoughts, please send me a message.<br />
+           I will reply back to you soon.
         </p>
         <div className='form-container'></div>
         <form className='form' ref={form} onSubmit={sendEmail}>

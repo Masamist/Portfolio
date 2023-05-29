@@ -105,7 +105,7 @@ function Details() {
           Manager: I want to record all project details in one place which can be shared with authorised users, so I don’t need to update disparate documents separately.
           Staff: I like to know that I’ve completed tasks and what’s expected on site for the day.
           Staff: It would be great to see a previous photo that my workmate took last week, he’s unavailable today.
-          Accountant: As an accountant I like to see where my moneys going and want a detailed breakdown.
+          Accountant: As an accountant I like to see where my money is going and want a detailed breakdown.
           </p>
         </div>
 
@@ -163,7 +163,7 @@ function Details() {
           This was a large-scale project that I successfully completed with a 
           classmate, we worked together to create and deploy the web application, 
           it was a significant undertaking as it would normally be assigned to a 
-          team of 4 to 5 students. My roles were business analyst, I researched 
+          team of 4 to 5 students. My roles were: business analyst, I researched 
           and created the business and solution requirements and populated each 
           document, UI designer design including mock-ups. My main role was 
           back-end developer. We decided to use React JS as our web framework 

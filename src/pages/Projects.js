@@ -55,8 +55,8 @@ function ProjectTop() {
             <p className='project-txt'>I would like to introduce my web projects, 
             that I enjoyed creating. On top of the focus on coding 
             I was lucky to solely do the UX design for all the projects. 
-            Furthermore, utilising the process and procedures of agile prot, 
-            jecacting in the role of scrum master, developer, tester, 
+            Furthermore, utilising the process and procedures of agile project
+            acting in the role of scrum master, developer, tester, 
             business analyst, financial staff or even project manager. 
             Each project demonstrates my achievements, growing skills, 
             and opportunities for further growth.</p>
@@ -87,7 +87,7 @@ function Kpc() {
           <div className='kpc-button-container'>
             <div>
               <Link to="/kpc-project">
-                <button className='kpc-button-whole'>More about project</button>
+                <button className='kpc-button-whole'>More project details</button>
               </Link>
             </div>
             <div>
@@ -115,14 +115,14 @@ function GetItPython() {
           <div>
             <h3 className='sub-title' id='white-txt-color'>Django Secure Web + Agile Project</h3>
             <h1 className='project-title' id='white-txt-color'>Get IT Python</h1>
-            <p className='project-txt' id='project-txt-getit'>I would like to introduce my web projects, 
-            that I enjoyed creating. On top of the focus on coding 
-            I was lucky to solely do the UX design for all the projects. 
-            Furthermore, utilising the process and procedures of agile prot, 
-            jecacting in the role of scrum master, developer, tester, 
-            business analyst, financial staff or even project manager. 
-            Each project demonstrates my achievements, growing skills, 
-            and opportunities for further growth.</p>
+            <p className='project-txt' id='project-txt-getit'>GET IT Python is an enterprise application 
+            that is a coding tutorial application for users on how to code. 
+            The first iteration was focused on Python (hence its name Get IT Python), 
+            consequentially adding more programming languages. The original requirement was 
+            a mobile app, then we persuaded the client, that is our lecturer, to use 
+            PWA (Progressive Web App) to enable access from any device via a browser or a downloaded app. 
+            The free version is for absolute beginner level, the subscription version for junior 
+            developers and above is an effective tool for searching syntax or capabilities.</p>
           </div>
           <div>
             <img className='getit-pc-img' src={getit_pc} alt='Get IT Python PC' />
@@ -264,7 +264,7 @@ function DigitalResources() {
           <h3 className='sub-title'>Web Academic Library Project</h3>
           <h1 className='project-title' id='dresources-color'>Whitecliffe Digital Resources</h1>
           <p className='project-txt'>This project is a team project to create online digital resources 
-              for an lerning institution.
+              for an learning institution.
               This Whitecliffe Digital Resources project is a group project. 
               I worked as the front-end and UI designer. 
               I prioritized the key search function first, as in most cases students
@@ -306,7 +306,7 @@ function AMS() {
             application with a cross platform mobile application tool, 
             Xamarin Form. This project was  done in early 2022, now in 2023 
             other frameworks are more popular such as React Native. 
-            This project provided me with a really good understanding some 
+            This project provided me with a really good understanding of some 
             software design patterns such as  MVVM pattern and others like MVC 
             pattern. </p>
               <img id='dresources_img' src={ams1} alt='AMS app' />
@@ -384,7 +384,7 @@ function EyeCandyCinema() {
             This project was to gain elementary skills to build a website and 
             also planning including business analysis of client information, 
             scheduling, page site structure with wire-frames and mock-ups using 
-            Figma. I also learned about data model structure and design with SQL 
+            Figma. I also learned about data model structures and design with SQL 
             using Eye Candy Cinema movie information.</p>
           <div className='tool-icons-container'>
             <img id='cinema-tools-icon' className='tool-icons' src={tools_cinema} alt='Tool icons' />
