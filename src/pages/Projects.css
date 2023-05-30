@@ -324,7 +324,7 @@
 .GeyIt {
   height: 100%;
   width: 100%;
-  padding: 4.5rem 0;
+  padding: 4rem 0;
   background-color: var(--primary-color);
 }
 .getit-container {
@@ -335,6 +335,10 @@
 }
 .getit-container div{
   flex: 50%;
+}
+.getit-pc-img {
+  padding-top: 9rem;
+  width: 35rem;
 }
 #project-txt-getit {
   color: #fff;

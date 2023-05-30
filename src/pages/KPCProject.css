@@ -2,16 +2,17 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 77vh;
+  height: auto;
   background-image: url('../assets/kpc_bg_image.png');
+  background-position-y: 75vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .kpc-container {
   max-width: 55rem;
-  padding: 17rem 5rem 0 5rem;
+  padding: 17rem 5rem 5rem 5rem;
 }
 .kpc-top-title{
   font-size: 4rem;
@@ -67,7 +68,6 @@
     background-position: top center;
     background-size: 100%;
     height: 63vh;
-    margin-top: 0;
   }
   .kpc-container {
     max-width: 100%;
@@ -83,6 +83,9 @@
   }
 }
 @media (max-width: 600px) {
+  .kpc-top {
+    margin-top: 0;
+  }
   .kpc-container {
     padding: 10rem 1rem;
   }
@@ -110,7 +113,7 @@
   max-width: 55rem;
 }
 #kpc-detail-title{
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 .kpc-img-container {
   display: flex;
@@ -135,6 +138,11 @@
   display: flex;
   flex-direction: row;
   gap:4%;
+}
+@media (max-width: 1300px) {
+  .kpc-detail-container {
+    padding-top: 12rem;
+  }
 }
 @media (max-width: 1200px) {
   .kpc-detail-item-container {
@@ -162,6 +170,9 @@
   }
   #kpc-detail-title{
     margin-top: 4rem;
+  }
+  .kpc-sub-header {
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 900px) {
