@@ -99,13 +99,13 @@ function Details() {
         <div className='kpc-detail-sub-container'>
           <h2 className='kpc-sub-header'>User Stories</h2>
           <p className='project-txt'>
-          Client: I want to be able to be out of town for a week and still see how 
-          the project is progressing daily.
-          Manager: I dream of pricing up a job using a library of Tasks I've already executed on projects and re-use data to speed up the process.
-          Manager: I want to record all project details in one place which can be shared with authorised users, so I don’t need to update disparate documents separately.
-          Staff: I like to know that I’ve completed tasks and what’s expected on site for the day.
-          Staff: It would be great to see a previous photo that my workmate took last week, he’s unavailable today.
-          Accountant: As an accountant I like to see where my money is going and want a detailed breakdown.
+          <b>Client:</b> I want to be able to be out of town for a week and still see how 
+          the project is progressing daily.<br />
+          <b>Manager:</b> I dream of pricing up a job using a library of Tasks I've already executed on projects and re-use data to speed up the process.<br />
+          <b>Manager: </b>I want to record all project details in one place which can be shared with authorised users, so I don’t need to update disparate documents separately.<br />
+          <b>Staff:</b> I like to know that I’ve completed tasks and what’s expected on site for the day.<br />
+          <b>Staff:</b> It would be great to see a previous photo that my workmate took last week, he’s unavailable today.<br />
+          <b>Accountant:</b> As an accountant I like to see where my money is going and want a detailed breakdown.<br />
           </p>
         </div>
 
