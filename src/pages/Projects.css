@@ -592,7 +592,7 @@
   margin: 3rem 0;
   color: #6FCF97;
   display: inline;
-  width: 48%;
+  width: 100%;
   background-color: inherit;
   padding: .5rem 0;
   border-radius: 4px;
@@ -608,7 +608,7 @@
 }
 #tool-icon-resource {
   width: 29rem;
-  padding-bottom: 1rem;
+  padding: 1.5rem 0 0 0;
 }
 @media (max-width: 600px) {
   #tool-icon-resource {
