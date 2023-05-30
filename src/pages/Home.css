@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 50vh;
-  padding: 4rem 0 5rem 0;
+  height: auto;
+  padding: 4rem 0 4rem 0;
   justify-content: center;
 }
 .home-top div:first-child {
@@ -42,14 +42,13 @@
 }
 @media (max-width: 1000px) {
   .home-top-title {
-    font-size: 3.3rem;
-    line-height: 4.2rem;
+    font-size: 3rem;
+    line-height: 4rem;
   }
   .home-top {
     flex-direction: column;
     width: 100%;
-    height: auto;
-    padding: 1rem 0 5rem 0;
+    padding: 1rem 0 3rem 0;
     justify-content: center;
   }
   .home-top-container {
@@ -64,7 +63,7 @@
 }
 @media (max-width: 600px) {
   .home-top-title {
-    font-size: 2.9rem;
+    font-size: 2.6rem;
     line-height: 3.6rem;
   }
   .home-top div:first-child {

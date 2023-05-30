@@ -21,18 +21,18 @@
 }
 .about-top-txt {
   font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
   padding-top: 1.5rem;
 }
 @media (max-width: 1200px) {
   .about-top {
     width: 100%;
-    padding: 4rem 5rem 2rem 5rem;
+    padding: 2.5rem 5rem 2rem 5rem;
   }
   .about-top-txt {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
 }
 @media (max-width: 900px) {
