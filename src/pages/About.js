@@ -1,4 +1,6 @@
-import  { useRef } from 'react';
+import  { useRef, useState } from 'react';
+import { Link } from 'react-router-dom'
+import Modal from "react-overlays/Modal"
 import emailjs from '@emailjs/browser';
 // style
 import './About.css'
@@ -112,6 +114,10 @@ function Experience() {
 }
 
 function Contact() {
+  // Modal
+  const [showModal, setShowModal] = useState(false)
+  const handleClose = () => setShowModal(false)
+  const renderBackdrop = (props) => <div className="backdrop" {...props} />
 
   const form = useRef()
 
@@ -141,8 +147,30 @@ function Contact() {
           <input type='text' placeholder='Name' name='user_name' />
           <input type='email' placeholder='Email Address' name='user_email' />
           <textarea placeholder='Message' name='message' />
-          <button className='about-btn' type='submit' value='Send'>Submit</button>
+          <button className='about-btn' type='submit' value='Send' onClick={() => setShowModal(true)}>Submit</button>
         </form>
+        <Modal
+        className="modal"
+        show={showModal}
+        onHide={handleClose}
+        renderBackdrop={renderBackdrop}
+        >
+          <div>
+            <div className="modal-header">
+              <div className="modal-title">
+                <h3>Message:</h3></div>
+              <div>
+                <span className="close-button" onClick={handleClose}>
+                  x
+                </span>
+              </div>
+            </div>
+            <div className="modal-desc">
+              <h3>The message has been sent. Thank you.</h3>
+                <Link to="/"><button id="btn-contact">Go to Home</button></Link>
+            </div>
+          </div>
+        </Modal>
       </div>
     </section>
   )
