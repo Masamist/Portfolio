@@ -4,9 +4,8 @@
   width: 100%;
   height: auto;
   background-image: url('../assets/kpc_bg_image.png');
-  background-position-y: 75vh;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: 100%;
   margin-top: 2rem;
 }
@@ -55,9 +54,7 @@
 }
 @media (max-width: 1300px) {
   .kpc-top {
-    height: auto;
     background-repeat: no-repeat;
-    background-position: top center;
     height: 75vh;
   }
 }
