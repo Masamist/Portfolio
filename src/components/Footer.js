@@ -24,7 +24,7 @@ export default function Footer() {
         <a href='https://github.com/Masamist?tab=repositories'>
           <img src={github} alt='GitHub' />
         </a>
-        <a href='https://www.linkedin.com/in/masami-stonebridge-a9342a275/'>
+        <a href='https://www.linkedin.com/in/masami-stonebridge-0a0a35253/'>
           <img src={linkedin} alt='LinkedIn' />
         </a> 
         <p>
