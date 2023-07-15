@@ -21,8 +21,10 @@ function AboutIntroduction() {
       <div className='about-container'>
         <h1 className='about-top-title'>Hi there,<br />I am Masami.</h1>
         <p className='about-top-txt'>
-        I graduated Software Development at Whitecliffe and focused 
-        on building my career as a Full-Stack developer. </p>
+        I have recently completed a diploma in Software Development and am currently studying 
+        the Batchelor of Applied Information Technology at Whitecliffe which I will have completed 
+        studying by the end of 2023, 
+        focusing on building my career as a Full-Stack developer.</p>
         <p className='about-top-txt'>
         My skills are React, HTML, CSS, Bootstrap, Django as Front-end and Node, Mongo DB, 
         SQL, Firebase as Back-end, also JavaScript, Python and C#. I also have background in design, 

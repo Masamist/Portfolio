@@ -51,9 +51,12 @@ function Introduction() {
               My passion is Web Development <br />
               and UX UI Design
             </h2>
-            <p className='intro-p'>I am a graduate of the Software Development course at Whitecliffe College and excited to build a career as a Full-Stack developer.
-              My skills are React, JavaScript, HTML, CSS, Bootstrap, Django Framework with Python as a front-end, and Node, SQL and MongoDB as back-end. I am also an experienced designer.  
-              I am excited to apply my skills and creativity on new projects.</p>
+            <p className='intro-p'>I am seeking to build a career as a Full-Stack developer, 
+              I have recently completed a diploma in Software Development and am currently studying 
+              the Batchelor of Applied Information Technology at Whitecliffe which I will have completed studying 
+              by the end of 2023. My technical skills include React, JavaScript, HTML, CSS, Bootstrap, 
+              Django Framework with Python as a front-end, and Node, SQL and MongoDB as back-end. 
+              I am also an experienced designer. I am excited to apply my skills and creativity to new projects. </p>
               <Link to="/about">
                 <button className='btn-white' id='challenge-btn'>About Me</button>
               </Link>
