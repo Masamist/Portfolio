@@ -63,6 +63,15 @@ function Experience() {
             <h2 className='about-ex-category'>Education</h2>
           </div>
           <div>
+          <h3 className='about-ex-title'>Batchelor of Applied Information Technology (NZQA Level 7)</h3>
+            <p className='about-ex-year-info'>Whitecliffe | Auckland | Jul 2023 - Jun 2024</p>
+            <p className='about-ex-txt'>
+            I am currently completing my Batchelor study at campus which ends in December, 
+            then industry placement from January, which will be completed by June 2024. 
+            This program focuses on increasing technical skill to an industry ready level 
+            including Advanced Programming, Interaction Design and Web Technologies.  
+            </p>
+
             <h3 className='about-ex-title'>Diploma in Software Development (NZQA Level6)</h3>
             <p className='about-ex-year-info'>Whitecliffe | Auckland | Feb 2022 - Apr 2023</p>
             <p className='about-ex-txt'>
