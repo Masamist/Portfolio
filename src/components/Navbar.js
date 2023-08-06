@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 // styles
-import './Navbar.css'
+import './scss/Navbar.scss'
 
 export default function Navbar() {
   return (

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 // styles&images
-import './Footer.css'
+import './scss/Footer.scss'
 import github from '../assets/github.png'
 import linkedin from '../assets/linkedin.png'
 
