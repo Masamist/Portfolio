@@ -47,7 +47,7 @@ export default function Projects() {
   )
 }
 
-function ProjectTop() {
+const ProjectTop = () => {
   return (
     <section className='project-top'>
         <h1>Projects</h1>
@@ -67,7 +67,7 @@ function ProjectTop() {
   )
 }
 
-function Kpc() {
+const Kpc = () => {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
@@ -109,7 +109,7 @@ function Kpc() {
   )
 }
 
-function GetItPython() {
+const GetItPython = () => {
   return (
     <section className='bg-container-primary'>
       <div className='project-row-container'>
@@ -163,7 +163,7 @@ function GetItPython() {
   )
 }
 
-function Poco() {
+const Poco = () => {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
@@ -209,7 +209,7 @@ function Poco() {
   )
 }
 
-function HappyChick() {
+const HappyChick = () => {
   return (
     <section className='bg-container-tertiary'>
       <div className='project-row-container'>
@@ -264,7 +264,7 @@ function HappyChick() {
   )
 }
 
-function DigitalResources() {
+const DigitalResources = () => {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
@@ -299,7 +299,7 @@ function DigitalResources() {
   )
 }
 
-function AMS() {
+const AMS = () => {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
@@ -339,7 +339,7 @@ function AMS() {
   )
 }
 
-function Tradies() {
+const Tradies = () => {
   return (
     <section className='bg-container-tertiary'>
       <div className='inner-container'>
@@ -388,7 +388,7 @@ function Tradies() {
   )
 }
 
-function EyeCandyCinema() {
+const EyeCandyCinema = () => {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
@@ -428,7 +428,7 @@ function EyeCandyCinema() {
   )
 }
 
-function SugerSmash() {
+const SugerSmash = () => {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
@@ -472,7 +472,7 @@ function SugerSmash() {
   )
 }
 
-function Others() {
+const Others = () => {
   return (
     <section className='bg-container-primary'>
       <h1 className='project-title-tertiary others-heading'>Additional learnings</h1>

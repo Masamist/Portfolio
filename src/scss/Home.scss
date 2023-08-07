@@ -8,47 +8,53 @@
   flex-direction: row;
   width: 100%;
   height: auto;
-  padding: 4rem 0 4rem 0;
-  @media (max-width: 1000px) {
+  padding: 4rem 0 4rem 20rem;
+  @media (max-width: 1500px) {
+    padding: 1rem 0 3rem 10rem;
+  }
+  @media (max-width: 1200px) {
     flex-direction: column;
-    width: 100%;
     padding: 1rem 0 3rem 0;
     justify-content: center;
   }
   @media (max-width: 480px) {
     padding: 0 0 3rem 0;
   }
-
-  div:first-child {
-    width: 35%;
-    padding: 3.2rem;
-    @media (max-width: 1890px) {
-      width: 40%;
-      padding: 3.3rem 2rem;
-    }
-    @media (max-width: 1500px) {
-      width: 45%;
-      padding: 3.3rem 0;
-    }
+  div {
     @media (max-width: 1200px) {
-      width: 50%;
-    }
-    @media (max-width: 1000px) {
       width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    &:first-child {
+      width: 60%;
       padding: 3rem;
-    }
-    @media (max-width: 600px) {
-      padding: 1rem 1rem 3rem 1rem;
-    }
-    @media (max-width: 480px) {
-      padding: 3rem 2rem;
-    }
+      @media (max-width: 1600px) {
+        width: 40%;
+        padding: 3.3rem 0;
+      }
+      @media (max-width: 1200px) {
+        width: 100%;
+        padding: 4rem;
+      }
+      @media (max-width: 600px) {
+        padding: 1rem 1rem 3rem 1rem;
+      }
+      @media (max-width: 480px) {
+        padding: 3rem 2rem;
+      }
+    }  
   }
-
   img {
     width: 100%;
+    padding: 0 0 0 1rem;
     @media (max-width: 1500px) {
       width: 80%;
+      padding: 2rem 0 0 1rem;
+    }
+    @media (max-width: 1200px) {
+      width: 28%;
+      padding: 0 3rem 2rem 0;
     }
     @media (max-width: 1000px) {
       width: 18rem;
@@ -60,21 +66,15 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .home-top-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .home-top-title {
   font-size: 3em;
   font-family: 500;
   line-height: 1.3em;
+  @media (max-width: 1200px) {
+    font-size: 2.8em;
+  }
   @media (max-width: 1000px) {
     font-size: 2.5em;
-    line-height: 1.3em;
   }
   @media (max-width: 600px) {
     font-size: 2.6em;
@@ -84,6 +84,10 @@
     font-size: 2em;
     line-height: 2.8rem;
     padding-left: 0;
+  }
+  @media (max-width: 380px) {
+    font-size: 1.9em;
+    line-height: 2.7rem;
   }
 }
 

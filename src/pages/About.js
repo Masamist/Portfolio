@@ -15,7 +15,7 @@ export default function About() {
   )
 }
 
-function AboutIntroduction() {
+const AboutIntroduction = () => {
   return (
     <section className='bg-container-white about-top'>
       <div className='about-container'>
@@ -38,7 +38,7 @@ function AboutIntroduction() {
   )
 }
 
-function Experience() {
+const Experience = () => {
   return (
     <section className='bg-container-white about-top'>
       <div className='about-container'>
@@ -121,7 +121,7 @@ function Experience() {
   )
 }
 
-function Contact() {
+const Contact = () => {
   // Modal
   const [showModal, setShowModal] = useState(false)
   const handleClose = () => setShowModal(false)

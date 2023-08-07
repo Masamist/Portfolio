@@ -1,4 +1,7 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Waypoint } from 'react-waypoint'
+import { animated, useSpring, config } from 'react-spring'
 
 // style
 import '../scss/Home.scss'
@@ -21,25 +24,43 @@ export default function Home() {
   )
 }
 
-function HomeTop() {
+const HomeTop = () => {
+  const [on, toggle] = useState(false)
+  const animation = useSpring({
+    opacity: on ? 1 : 0,
+    transform: on ? 'translate3d(0, 0, 0)' : 'translate3d(50%, 0, 0)',
+    config: config.slow
+  })
   return (
     <section className='home-top'>
-      <div className='home-top-container'>
+      <div>
         <h1 className='home-top-title'>Hi, I am Masami.<br />
           Software Developer<br />
           and Designer</h1>
       </div>
-      <div className='home-top-container'>
+      <Waypoint onEnter={() => toggle(true)} />
+      <animated.div className='home-top-container' style={animation}>
         <img src={portrait} alt='portrait' />
-      </div>
+      </animated.div>
     </section>
   )
 }
 
-function Introduction() {
+const Introduction = () => {
+  const [visible, toggle] = useState(false)
+  const styles = useSpring({
+    opacity: visible ? 1 : 0,
+    y: visible ? 0 : 24,
+    config: config.slow
+  })
+  
   return (
     <section className='bg-container-primary'>
-        <div className='inner-container'>
+      <Waypoint
+        bottomOffset="50%" 
+        onEnter={() => toggle(true)} 
+        />
+        <animated.div className='inner-container' style={styles}>
           <div className='intro-img-container'>
             <img className='intro-img' src={introimage} alt='introduction images' />
           </div>
@@ -59,13 +80,13 @@ function Introduction() {
                 <button className='btn-primary'>About Me</button>
               </Link>
           </div>
-        </div> 
+        </animated.div> 
               
       </section>
   )
 }
 
-function Projects() {
+const Projects = () => {
   return (
     <section className='home-project-container'>
       <div className='home-top-flex-col'>
@@ -116,7 +137,7 @@ function Projects() {
   )
 }
 
-function Challenge() {
+const Challenge = () => {
   return (
     <section className='bg-container-secondary' id="callenge-container-padding">
       

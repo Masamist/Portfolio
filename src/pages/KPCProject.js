@@ -22,7 +22,7 @@ export default function KPCProject() {
   )
 }
 
-function KpcTop() {
+const KpcTop = () => {
   return (
     <section className='kpc-top'>
       <div className='kpc-container'>
@@ -49,7 +49,7 @@ function KpcTop() {
   )
 }
 
-function Details() {
+const Details = () => {
   return (
     <section className='bg-container-white'>
       <div className='kpc-img-container'>
@@ -173,7 +173,7 @@ function Details() {
   )
 }
 
-function Summary() {
+const Summary = () => {
   return (
     <summary className='bg-container-kpc'>
       <div className='inner-container-col'>
