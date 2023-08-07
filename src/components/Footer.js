@@ -20,6 +20,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      
       <div className='footer-copyright'>
         <a href='https://github.com/Masamist?tab=repositories'>
           <img src={github} alt='GitHub' />

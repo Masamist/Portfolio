@@ -100,6 +100,7 @@ textarea {
 }
 
 /* Common */
+///// general-btn-containers /////
 .btn-container {
   display: flex;
   justify-content: center;
@@ -107,4 +108,8 @@ textarea {
 
 .img-border {
   border: 1px solid #bbb;
+}
+
+#txt-white {
+  color: white;
 }

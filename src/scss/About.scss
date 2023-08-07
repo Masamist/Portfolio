@@ -1,7 +1,5 @@
 @use "variables" as var;
-@use "mixins";
 @use "index";
-
 
 /* common */
 .about-top {
@@ -30,19 +28,21 @@
   @media (max-width: 500px) {
     padding: 0 1.5rem;
   }
-}
-.about-ex-container > div:first-child {
-  width: 35%;
-  @media (max-width: 800px) {
-    padding-top: 4rem;
-    width: 100%;
-  }
-}
-.about-ex-container > div:nth-child(2) {
-  width: 68%;
-  @media (max-width: 800px) {
-    width: 100%;
-  }
+  div{
+    &:first-child {
+      width: 35%;
+      @media (max-width: 800px) {
+        padding-top: 4rem;
+        width: 100%;
+      }
+    }
+    &:nth-child(2) {
+      width: 68%;
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+    }
+  } 
 }
 
 .about-ex-category {
@@ -81,9 +81,9 @@
   @media (max-width: 600px) {
       padding: 1.8rem 1rem;
     }
-}
-.form > input, textarea {
-  margin: .8rem 0;
+  input, textarea {
+    margin: .8rem 0;
+  }
 }
 
 .contact-form-title {

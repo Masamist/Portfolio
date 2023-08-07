@@ -118,10 +118,10 @@ function Projects() {
 
 function Challenge() {
   return (
-    <section className='bg-container-secondary'>
-      <h1 className='header-white'>I love the challenge of<br />
-        finding a solution.</h1>
+    <section className='bg-container-secondary' id="callenge-container-padding">
+      
       <div className='challenge-txt-container'>
+      <h1 className='header-white'>I love the challenge of finding a solution.</h1>
         <p className='txt-white'>I graduated Software Development
           and I felt “I want to make more web apps!”. 
           I really like creative work including design and coding. 

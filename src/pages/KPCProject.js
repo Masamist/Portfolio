@@ -17,6 +17,7 @@ export default function KPCProject() {
     <>
       <KpcTop />
       <Details />
+      <Summary />
     </>
   )
 }
@@ -37,14 +38,12 @@ function KpcTop() {
         no website for their customers, thus customer landing pages 
         were also in scope.  
         </p>
-        <div className='project-top-link'>
-          <a href='https://github.com/Masamist/KauriPointConstruction'>
-            <button className='btn-kpc' id='gap'>Code on GitHub</button>
-          </a>
-          <a href='https://www.kauripointconstruction.co.nz/'>
-            <button className='btn-kpc'>Deployed Site</button>
-          </a>
-        </div>
+        <a href='https://github.com/Masamist/KauriPointConstruction'>
+          <button className='btn-kpcfill' id="kpc-btn-top">Code on GitHub</button>
+        </a>
+        <a href='https://www.kauripointconstruction.co.nz/'>
+          <button className='btn-kpcfill'>Deployed Site</button>
+        </a>
       </div>
     </section>
   )
@@ -58,11 +57,10 @@ function Details() {
             <img src={kpcWebsite} alt='Kauri Point Construction Website' />
           </div>
           <div>
-            <img src={kpcApp} alt='Kauri Point Construction App' />
+            <img src={kpcApp} alt='Kauri Point Construction App' className='img-border' />
           </div>
       </div>
 
-      
       <div className='inner-container-col'>
         <h1 className='kpc-cat-name'>Requirement</h1>
         <h2 className='kpc-sub-heading'>Problems and Solutions</h2>
@@ -169,25 +167,37 @@ function Details() {
         it was both challenging and rewarding.
         </p>
       </div>
+      
+      
+    </section>
+  )
+}
 
+function Summary() {
+  return (
+    <summary className='bg-container-kpc'>
       <div className='inner-container-col'>
-        <h2 className='kpc-sub-heading'>Summary</h2>
-        <p className='txt-primary'>
+        <h2 className='kpc-sub-heading' id="txt-white">Summary</h2>
+        <p className='txt-white'>
         Overall, the project went extremely well, our team showcased our skills, 
         we learnt a lot and the client was very impressed with the web 
         application. Projects are always challenging, the code does not work 
         sometimes, the reward is resolving the issues and bugs.
         </p>
-      </div>
-
-      <div className='btn-container'>
-        <a href='https://github.com/Masamist/KauriPointConstruction'>
-          <button className='btn-kpc' id='gap'>Code on GitHub</button>
-        </a>
-        <a href='https://www.kauripointconstruction.co.nz/'>
-          <button className='btn-kpc'>Deployed Site</button>
-        </a>
-      </div>
-    </section>
+        
+        <div className='project-btn-container'>
+          <div className='btn-inner-container-half'>
+            <a href='https://github.com/Masamist/KauriPointConstruction'>
+              <button className='project-btn-kpcfill'>Code on GitHub</button>
+            </a>
+          </div>
+          <div className='btn-inner-container-half'>
+            <a href='https://www.kauripointconstruction.co.nz/'>
+              <button className='project-btn-kpcfill'>Deployed Site</button>
+            </a>
+          </div>
+        </div>
+      </div>  
+    </summary>
   )
 }

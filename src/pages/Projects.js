@@ -50,7 +50,7 @@ export default function Projects() {
 function ProjectTop() {
   return (
     <section className='project-top'>
-        <h1 className='project-top-title'>Projects</h1>
+        <h1>Projects</h1>
         <div className='project-top-container'>
           <div className='project-txt-container'>
             <p className='txt-primary'>I would like to introduce my web projects, 
@@ -71,7 +71,7 @@ function Kpc() {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
-        <div className='project-sub-container'>
+        <div className='project-col-container'>
           <img src={kpc} alt='Kauri Point Construction' />
           <h3 className='sub-title'>Web Software Project</h3>
           <h1 className='project-title-kpc'>Kauri Point Construction</h1>
@@ -86,17 +86,17 @@ function Kpc() {
           </div>
           
           <div className='project-btn-container'>
-            <div className='btn-full-container'>
+            <div className='btn-inner-container-whole'>
               <Link to="/kpc-project">
                 <button className='project-btn-kpc'>More project details</button>
               </Link>
             </div>
-            <div className='btn-half-container'>
+            <div className='btn-inner-container-half'>
               <a href='https://github.com/Masamist/KauriPointConstruction'>
                 <button className='project-btn-kpc'>Code on GitHub</button>
               </a>
             </div>
-            <div className='btn-half-container'>
+            <div className='btn-inner-container-half'>
               <a href='https://www.kauripointconstruction.co.nz/'>
                 <button className='project-btn-kpc'>Deployed Site</button>
               </a>
@@ -130,7 +130,7 @@ function GetItPython() {
         </div>
       </div>
       <div className='inner-container'>
-        <div className='project-sub-container'>
+        <div className='project-col-container'>
           <div className='poster-container'>
             <img src={poster_getit_agile} alt='Get IT Agile Poster' />
             <img src={poster_getit_django} alt='Get IT Django Poster' />
@@ -145,14 +145,14 @@ function GetItPython() {
             </div>
 
             <div className='project-btn-container'>
-              <div className='btn-half-container'>
+              <div className='btn-inner-container-half'>
                 <a href='https://github.com/Masamist/Get_It_Python_Project'>
-                  <button className='project-btn-white'>Code on GitHub</button>
+                  <button className='project-btn-primary'>Code on GitHub</button>
                 </a>
               </div>
-              <div className='btn-half-container'>
+              <div className='btn-inner-container-half'>
                 <a href='https://masamist.pythonanywhere.com/'>
-                  <button className='project-btn-white'>Deployed Site</button>
+                  <button className='project-btn-primary'>Deployed Site</button>
                 </a>
               </div>
             </div>
@@ -167,7 +167,7 @@ function Poco() {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
-        <div className='project-sub-container'>
+        <div className='project-col-container'>
           <img src={poco} alt='Poco a Poco' className='img-border' />
           <h3 className='sub-title'>CMS Web Project</h3>
           <h1 className='project-title-poco'>poco a poco hair saloon</h1>
@@ -192,12 +192,12 @@ function Poco() {
           </div>
           
           <div className='project-btn-container'>
-            <div className='btn-half-container'>
+            <div className='btn-inner-container-half'>
               <a href='https://github.com/Masamist/PocoAPocoHairSaloon'>
                 <button className='project-btn-poco'>Code on GitHub</button>
               </a>
             </div>
-            <div className='btn-half-container'>
+            <div className='btn-inner-container-half'>
               <a href='https://masamist.github.io/PocoAPocoHairSaloon/index.html'>
                 <button className='project-btn-poco'>Code on GitHub</button>
               </a>
@@ -231,7 +231,7 @@ function HappyChick() {
         </div>
       </div>
       <div className='inner-container'>
-        <div className='project-sub-container'>
+        <div className='project-col-container'>
             <video controls>
               <source src='https://firebasestorage.googleapis.com/v0/b/portfolio-2f0a8.appspot.com/o/happy_chick.mp4?alt=media&token=2d6df508-3b3a-4c89-925e-14cac10a7874' type='video/mp4' />
             </video>
@@ -250,7 +250,7 @@ function HappyChick() {
             </div>
             
             <div className='project-btn-container'>
-              <div className='btn-full-container'>
+              <div className='btn-inner-container-whole'>
                 <a href='https://github.com/Masamist/HappyChick'>
                   <button className='project-btn-game'>Code on GitHub</button>
                 </a>
@@ -268,7 +268,7 @@ function DigitalResources() {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
-        <div className='project-sub-container'>
+        <div className='project-col-container'>
           <img id='dresources_img' src={dresources} alt='Whitecliffe Digital Resources' />
           <h3 className='sub-title'>Web Academic Library Project</h3>
           <h1 className='project-title-digital-resouce'>Whitecliffe Digital Resources</h1>
@@ -287,7 +287,7 @@ function DigitalResources() {
           </div>
           
           <div className='project-btn-container'>
-            <div className='btn-full-container'>
+            <div className='btn-inner-container-whole'>
               <a href='https://github.com/Masamist/DigitalResourceProject'>
                 <button className='project-btn-digital-resouce' id='gap'>Code on GitHub</button>
               </a>
@@ -303,7 +303,7 @@ function AMS() {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
-        <div className='project-sub-container'>
+        <div className='project-col-container'>
           <h3 className='sub-title'>Xamarine Mobile App Development</h3>
           <h1 className='project-title-ams'>AMS Mobile App</h1>
           <p className='txt-primary'>AMS (Auckland Merchandise Systems) is a company which provides a 
@@ -343,7 +343,7 @@ function Tradies() {
   return (
     <section className='bg-container-tertiary'>
       <div className='inner-container'>
-        <div className='project-sub-container'>
+        <div className='project-col-container'>
           <h3 className='sub-title'>Business Analysis + Web Project</h3>
           <h1 className='project-title-white'>Tradies Web Service</h1>
           <p className='txt-primary'>This project was to establish a new web service called “Tradies” 
@@ -364,23 +364,24 @@ function Tradies() {
           </div>
 
           <div className='project-btn-container'>
-            <div className='btn-half-container'>
+            <div className='btn-inner-container-half'>
               <a href='https://github.com/Masamist/tradies'>
                 <button className='project-btn-game'>Code on GitHub</button>
               </a>
             </div>
-            <div className='btn-half-container'>
+            <div className='btn-inner-container-half'>
               <a href='https://masamist.github.io/tradies/'>
                 <button className='project-btn-game'>Deployed Site</button>
               </a>
             </div>
           </div>
+          <div className='tradie-image-container'>
+            <img className='tradie-img' src={tradie1} alt='Tradies Mock-up' />
+            <img className='tradie-img' src={tradie2} alt='Tradies Mock-up' />
+            <img className='tradie-img' src={tradie3} alt='Tradies Mock-up' />     
         </div>
-        <div className='tradie-image-container'>
-          <img className='tradie-img' src={tradie1} alt='Tradies Mock-up' />
-          <img className='tradie-img' src={tradie2} alt='Tradies Mock-up' />
-          <img className='tradie-img' src={tradie3} alt='Tradies Mock-up' />     
         </div>
+        
              
       </div>
     </section>
@@ -391,7 +392,7 @@ function EyeCandyCinema() {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
-        <div className='project-sub-container'>
+        <div className='project-col-container'>
           <img src={cinema} alt='Eye Candy Cinema' className='img-border' />
           <h3 className='sub-title'>Web Project</h3>
           <h1 className='project-title-cinema'>Eye Candy Cinema</h1>
@@ -409,12 +410,12 @@ function EyeCandyCinema() {
           </div>
           
           <div className='project-btn-container'>
-            <div className='btn-half-container'>
+            <div className='btn-inner-container-half'>
               <a href='https://github.com/Masamist/EyeCandyCinemas'>
                 <button className='project-btn-cinema'>Code on GitHub</button>
               </a>
             </div>
-            <div className='btn-half-container'>
+            <div className='btn-inner-container-half'>
               <a href='https://masamist.github.io/EyeCandyCinemas/'>
                 <button className='project-btn-cinema'>Deployed Site</button>
               </a>
@@ -431,7 +432,7 @@ function SugerSmash() {
   return (
     <section className='bg-container-white'>
       <div className='inner-container'>
-        <div className='project-sub-container'>
+        <div className='project-col-container'>
           <h3 className='sub-title'>Professional Practice</h3>
           <h1 className='project-title-suger-smash'>Sugar Smash</h1>
           <p className='txt-primary'>My first group project at Whitecliffe. This project was to define 

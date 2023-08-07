@@ -1,5 +1,4 @@
 @use "../../scss/variables" as var;
-@use "../../scss/mixins";
 @use "../../scss/index";
 
 .nav-container {
@@ -18,12 +17,44 @@
   box-sizing: border-box;
   float: right;
   @media (max-width: 800px) {
-    width: 18em;
+    width: 20em;
   }
-  @media (max-width: 350px) {
-    width: 10em;
+  @media (max-width: 400px) {
+    width: 100%;
     float: left;
     padding-left: 1rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    li {
+      font-size: 1.1em;
+      font-weight: 400;
+      padding-left: .1rem;
+      padding-top: .9rem;
+      @media (max-width: 850px) {
+        font-size: 1rem;
+        padding-left: 0;
+        padding-top: .8rem;
+      }
+      @media (max-width: 450px) {
+        font-size: rem;
+        padding-left: .1rem;
+        padding-top: .7rem;
+      }
+      a {
+        text-decoration: none;
+        color: #666;      
+      }
+      a:hover {
+        text-decoration: none;
+        color: var.$secondary;
+      }
+
+    }
   }
 }
 .logo-container {
@@ -41,35 +72,14 @@
   display: flex;
   align-items: center;
   margin-right: auto;
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
+    font-size: 2.1rem;
+  }
+  @media (max-width: 850px) {
     font-size: 1.9rem;
   }
-
-}
-.navbar ul {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: flex-end;
-  padding-left: 1rem;
-}
-.navbar ul li {
-  font-size: 1.1em;
-  font-weight: 400;
-  padding-left: .1rem;
-  padding-top: .9rem;
-  @media (max-width: 700px) {
-    font-size: 1rem;
-    padding-left: .1rem;
-    padding-top: .7rem;
+  @media (max-width: 400px) {
+    font-size: 1.7rem;
   }
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: #666;
-}
-.navbar ul li a:hover {
-  text-decoration: none;
-  color: var.$secondary;
 }
 

@@ -2,15 +2,7 @@
 @use "sass:map";
 @use "sass:color";
 
-// Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-// font Variables
-$roboto: 'Roboto', sans-serif;
-$montserrat: 'Montserrat', sans-serif;
-
-
+// containers
 @mixin bg-container ($name:"", $bg:white) {
   .bg-container#{$name} {
     width: 100%;
@@ -33,14 +25,15 @@ $montserrat: 'Montserrat', sans-serif;
 @include bg-container("-secondary", var.$secondary);
 @include bg-container("-tertiary", var.$tertiary);
 @include bg-container("-white", white);
+@include bg-container("-kpc", var.$kpc);
 
-// header
+// headings
 @mixin header($name:"", $col, $align){
   .header#{$name} {
     color: $col;
-    font-family: $montserrat;
+    font-family: var.$montserrat;
     font-size: 4.5em;
-    font-weight: 200;
+    font-weight: 300;
     text-align: $align;
     @media (max-width: 1200px) {
       font-size: 4em;
@@ -61,6 +54,36 @@ $montserrat: 'Montserrat', sans-serif;
 @include header("-secondary", var.$secondary, left);
 @include header("-white", white, center);
 
+// Project headings
+@mixin project-title($name:"", $col){
+  .project-title#{$name} {
+    color: $col;
+    font-family: var.$roboto;
+    font-size: 4em;
+    font-weight: 300;
+    padding: 1rem 0 0 0;
+    @media (max-width: 1200px) {
+      font-size: 3em;
+    }
+    @media (max-width: 800px) {
+      font-size: 2.7em;
+    }
+    @media (max-width: 600px) {
+      font-size: 2.5em;
+    }
+  } 
+}
+@include project-title("-primary", var.$txt);
+@include project-title("-secondary", var.$secondary);
+@include project-title("-tertiary", var.$tertiary);
+@include project-title("-white", white);
+@include project-title("-kpc", var.$kpc);
+@include project-title("-poco", var.$poco);
+@include project-title("-digital-resouce", var.$digital-resouce);
+@include project-title("-ams", var.$ams);
+@include project-title("-cinema", var.$cinema);
+@include project-title("-suger-smash", var.$suger-smash);
+
 // text
 @mixin txt($name:"", $col){
   .txt#{$name} {
@@ -77,7 +100,7 @@ $montserrat: 'Montserrat', sans-serif;
 @include txt("-primary", var.$txt);
 @include txt("-white", white);
 
-// button
+// general buttons
 @mixin btn ($name:"", 
   $bg: var.$primary, 
   $col:white, 
@@ -99,6 +122,9 @@ $montserrat: 'Montserrat', sans-serif;
       padding: .5rem 4rem;
       font-size: 1.1em;
     }
+    @media (max-width: 800px) {
+      padding: .5rem 3.5rem;
+    }
     @media (max-width: 600px) {
       width: 100%;
       font-size: 1em;
@@ -118,8 +144,79 @@ $buttons:
   -secondary var.$secondary white white white var.$secondary, 
   -tertiary white var.$tertiary var.$tertiary  var.$tertiary white,
   -secondaryfill var.$secondary white var.$secondary white var.$secondary,
-  -kpc inherit var.$kpc var.$kpc var.$kpc white;
+  -kpcfill inherit var.$kpc var.$kpc var.$kpc white;
 
 @each $name, $bg, $col, $border-col, $hover-bg, $hover-col in $buttons {
   @include btn($name, $bg, $col, $border-col, $hover-bg, $hover-col)
 }
+
+// project buttons
+@mixin project-btn ($name:"", 
+  $bg: inherit, 
+  $col: var.$txt, 
+  $border: var.$txt,
+  $hover-bg: inherit,
+  $hover-col:var.$txt
+  ){
+  .project-btn#{$name}{
+    border: 2px solid $border;
+    color: $col;
+    background-color: $bg;
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 1.2em;
+    border-radius: 4px;
+    align-self: center;
+    text-decoration: none;
+    cursor: pointer;
+    @media (max-width: 1000px) {
+      padding: .5rem 4rem;
+      font-size: 1.1em;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      font-size: 1em;
+    }
+    &:hover {
+      background: $hover-bg;
+      color: $hover-col;
+      transition: 256ms all;
+    }
+  }
+}
+$buttons: 
+  "",
+  -kpc white var.$kpc var.$kpc var.$kpc white,
+  -poco white var.$poco var.$poco var.$poco white,
+  -game inherit var.$game var.$game var.$game var.$tertiary,
+  -digital-resouce white var.$digital-resouce var.$digital-resouce var.$digital-resouce white,
+  -ams white var.$ams var.$ams var.$ams white,
+  -cinema white var.$cinema var.$cinema var.$cinema white,
+  -suger-smash white var.$suger-smash var.$suger-smash var.$suger-smash white,
+  -primary var.$primary white white white var.$primary,
+  -kpcfill var.$kpc white white white var.$kpc;
+@each $name, $bg, $col, $border-col, $hover-bg, $hover-col in $buttons {
+  @include project-btn($name, $bg, $col, $border-col, $hover-bg, $hover-col)
+}
+
+///// project-btn-containers /////
+.project-btn-container {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin btn-inner-container($name:"", $width){
+  .btn-inner-container#{$name} {
+    width: $width;
+    padding-bottom: 4%;
+    @media (max-width: 800px) {
+      width: 100%;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+@include btn-inner-container("-whole", 100%);
+@include btn-inner-container("-half", 48%);
