@@ -91,30 +91,45 @@
   text-align: right;
   font-size: .8em;
   text-align: right;
-  padding: 6.8rem  2rem 0 0;
+  padding: 2rem 2rem 0 0;
   @media (max-width: 1200px) {
-    padding: 6rem 2rem 0 0;
+    padding: 1rem 2rem 0 0;
   }
   @media (max-width: 800px) {
     font-size: .7em;
-    padding: 5.8rem  1.5rem 0 0;
+    padding: 1rem  1.5rem 0 0;
   }
-  @media (max-width: 650px) {
-    padding: 8rem  1.5rem 0 0;
+  div {
+    padding-top: 2rem;
+    @media (max-width: 1200px) {
+      padding-top: 3rem;
+    }
+    @media (max-width: 800px) {
+      padding-top: 5rem;
+    }
+    a {
+      &:first-child {
+        padding-right:1rem;
+      }
+      img {
+        width: 2.5rem;
+        padding: 0 0 1rem 0;
+        @media (max-width: 1200px) {
+            width: 2.4rem;
+        }
+        @media (max-width: 680px) {
+          width: 2.3rem;
+        }
+      }
+    }
   }
-  a {
-    &:first-child {
-      padding-right:1rem;
-    }
-    img {
-      width: 2.5rem;
-      padding: 0 0 1rem 0;
-      @media (max-width: 1200px) {
-          width: 2.4rem;
-      }
-      @media (max-width: 680px) {
-        width: 2.3rem;
-      }
-    }
+}
+.btn-scroll {
+  text-decoration: none;
+  background-color: inherit;
+  border: none;
+  opacity: 0.5;
+  img {
+    width: 2rem;
   }
 }
