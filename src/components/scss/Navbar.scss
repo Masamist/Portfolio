@@ -1,0 +1,85 @@
+@use "../../scss/variables" as var;
+@use "../../scss/index";
+
+.nav-container {
+  width: 100%;
+  height: 12vh;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 700px) {
+    height: 13vh;
+  }
+}
+.navbar {
+  width: 22em;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  float: right;
+  @media (max-width: 800px) {
+    width: 20em;
+  }
+  @media (max-width: 400px) {
+    width: 100%;
+    float: left;
+    padding-left: 1rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    li {
+      font-size: 1.1em;
+      font-weight: 400;
+      padding-left: .1rem;
+      padding-top: .9rem;
+      @media (max-width: 850px) {
+        font-size: 1rem;
+        padding-left: 0;
+        padding-top: .8rem;
+      }
+      @media (max-width: 450px) {
+        font-size: rem;
+        padding-left: .1rem;
+        padding-top: .7rem;
+      }
+      a {
+        text-decoration: none;
+        color: #666;      
+      }
+      a:hover {
+        text-decoration: none;
+        color: var.$secondary;
+      }
+
+    }
+  }
+}
+.logo-container {
+  border-right: 1px solid #ccc;
+  padding-top: 1rem;
+}
+.logo {
+  font-size: 2.3rem;
+  font-family: var.$montserrat;
+  font-weight: 500;
+  color: #ccc;
+  text-align: end;
+  padding-top: .5rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  @media (max-width: 1200px) {
+    font-size: 2.1rem;
+  }
+  @media (max-width: 850px) {
+    font-size: 1.9rem;
+  }
+  @media (max-width: 400px) {
+    font-size: 1.7rem;
+  }
+}
+

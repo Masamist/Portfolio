@@ -1,0 +1,296 @@
+@use "variables" as var;
+@use "index";
+
+/* Poject Top Area */
+.project-top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5.5rem 18rem;
+  @media (max-width: 1650px) {
+    padding: 5rem 7rem 4rem 7rem;
+  }
+  @media (max-width: 1200px) {
+    padding: 4rem 4rem 0 4rem ;
+  }
+  @media (max-width: 800px) {
+    padding: 3rem 2rem 0 2rem;
+  }
+  @media (max-width: 600px) { 
+    padding: 2.3rem 1rem 0 1rem;
+  }
+  h1 {
+    color: var.$primary;
+  font-family: var.$montserrat;
+  font-weight: 100;
+  font-size: 12em;
+  @media (max-width: 1200px) {
+    font-size: 10em;
+  }
+  @media (max-width: 800px) {
+    font-size: 8em;
+  }
+  @media (max-width: 600px) {
+    font-size: 5em;
+  }
+  @media (max-width: 400px) {
+    font-size: 4.5em;
+  }
+  }
+}
+
+.project-top-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  @media (max-width: 600px) {
+    flex-direction: row;
+  }
+}
+.project-txt-container { 
+  width: 50rem;
+  padding: 3rem 0;
+  @media (max-width: 1200px) { 
+    width: 40rem;
+    padding: 1rem .5rem;
+  }
+  @media (max-width: 800px) {
+    width: 30rem;
+  }
+}
+
+
+/* Projects Common items */
+
+///// Containers /////
+// Flex-col-container
+.project-col-container {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  @media (max-width: 1200px) {
+      width: 100%;
+      padding:0 5rem;
+  }
+  @media (max-width: 950px) {
+      padding:0 3rem;
+  }
+  @media (max-width: 600px) {
+    padding: 0;
+  }
+}
+// Flex-row-container
+.project-row-container {
+  display: flex;
+  flex-direction: row;
+  gap:4%;
+  padding-bottom: 4rem;
+  @media (max-width: 1300px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 2rem 10rem;
+      gap: 0;
+  }
+  @media (max-width: 950px) {
+    padding: 3rem 3rem;
+  }
+  @media (max-width: 600px) {
+    padding: 2rem 1rem;
+  }
+  div{
+    flex: 50%;
+  }
+}
+
+
+///// tool-icons /////
+.tool-icons-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding:.5rem 0;
+}
+.tool-icons {
+  height: 4rem;
+  @media (max-width: 800px){
+    height: 3.5rem;
+  }
+  @media (max-width: 600px){
+    height: 3rem;
+  }
+  @media (max-width: 400px){
+    height: 2.7rem;
+  }
+}
+
+///// heading and text /////
+.sub-title{
+  color: #999;
+  font-size: 1.9rem;
+  font-family: 500;
+  padding-top: 3.5rem;
+  @media (max-width: 900px) {
+      font-size: 1.5rem;
+      padding-top: 3rem;
+    }
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+}
+#white-txt-color {
+  color: #fff;
+}
+
+/* Kauri Point Construction */
+
+/* Get IT Python */
+.getit-pc-img {
+  padding-top: 5rem;
+  width: 30rem;
+  @media (max-width: 800px) {
+    width: 100%
+  }
+}
+.poster-container > img {
+  padding: 1.5em 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1250px) {
+    width: 70%;
+    padding: 2.5rem 0;
+  }
+  @media (max-width: 950px) {
+    padding: 2rem 0;
+  }
+  @media (max-width: 600px) {
+      width: 100%;
+      padding: 1rem .5rem;
+    }
+}
+
+/* Happy Chick */
+.game-image {
+  padding-top: 3rem;
+  @media (max-width: 1250px) {
+    width: 100%;
+    padding-top: 2rem;
+  @media (max-width: 900px) {
+      margin-top: 0
+    }
+  }
+}
+
+
+/* Whitecliffe Digital Resources */
+
+/* AMS */
+
+/* Tradies */
+.tradie-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tradie-img {
+  display: block;
+  margin-top: 2.5rem;
+  width: 30rem;
+  @media (max-width: 600px) {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+/* Eye Candy Cinema */
+
+/* Sugar Smash */
+.header-unique {
+  text-align: center;
+  font-size: 2.7rem;
+  font-family: 400;
+  color: var.$suger-smash;
+  padding: 3.7rem 0;
+  @media (max-width: 1200px) {
+    font-size: 2.2em;
+    padding: 2.7em 0 0 0;
+  }
+  @media (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+.sugar-smash-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3%;
+  @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  div {
+    width: 30%;
+    @media (max-width: 1200px) {
+        width: 20rem;
+        padding: 3rem 0;
+      }
+    @media (max-width: 800px) {
+      padding: 1.5rem 0;
+    }
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.sugar-smash-h2 {
+  font-weight: 400;
+  color: var.$suger-smash;
+  font-size: 1.5em;
+  padding-top: 1rem;
+}
+
+
+/* Others(Additional learning) */
+.others-heading {
+  text-align: end;
+  @media (max-width: 600px) {
+      text-align: start;
+    }
+}
+.others-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  @media (max-width: 600px) {
+    padding: 1rem 0;
+  }
+}
+#content-left {
+  padding-right: 33rem;
+  @media (max-width: 1200px) {
+    padding-right: 25rem;
+  }
+  @media (max-width: 900px) {
+    padding-right: 14rem;
+  }
+  @media (max-width: 600px) {
+    padding-right: 0;
+  }
+}
+#content-right {
+  padding-left: 33rem;
+  @media (max-width: 1200px) {
+    padding-left: 25rem;
+  }
+  @media (max-width: 900px) {
+    padding-left: 14rem;
+  }
+  @media (max-width: 600px) {
+    padding-left: 0;
+  }
+}

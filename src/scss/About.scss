@@ -1,0 +1,145 @@
+@use "variables" as var;
+@use "index";
+
+/* common */
+.about-top {
+  display: flex;
+}
+.about-container {
+  max-width: 47rem;
+  @media (max-width: 900px) {
+    padding-bottom: 1rem;
+  }
+}
+
+/* Experience */
+.about-ex-container {
+  width: 100%;
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  padding-right: 3rem;
+  gap: 4%;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2.5rem;
+  }
+  @media (max-width: 500px) {
+    padding: 0 1.5rem;
+  }
+  div{
+    &:first-child {
+      width: 35%;
+      @media (max-width: 800px) {
+        padding-top: 4rem;
+        width: 100%;
+      }
+    }
+    &:nth-child(2) {
+      width: 68%;
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+    }
+  } 
+}
+
+.about-ex-category {
+  font-weight: 400;
+  color: var.$secondary;
+  float: right;
+  @media (max-width: 800px) {
+    float: left;
+    padding-bottom: 1.8rem;
+  }
+}
+.about-ex-title {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-bottom: .8rem;
+  @media (max-width: 600px) {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+}
+.about-ex-year-info {
+  font-size: .9rem;
+  color: #999;
+}
+
+
+/* Contact */
+.txt-center{
+  text-align: center;
+}
+.form {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  padding: 2rem;
+  @media (max-width: 600px) {
+      padding: 1.8rem 1rem;
+    }
+  input, textarea {
+    margin: .8rem 0;
+  }
+}
+
+.contact-form-title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 2rem 0;
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+    padding: 1rem 0;   
+  }
+}
+
+/* Modal */
+.modal {
+  font-family: var.$montserrat;
+  position: fixed;
+  width: 450px;
+  z-index: 1040;
+  top: 30%;
+  left: 30%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  @media (max-width: 800px) {
+    width: 80%;
+    left: 10%;
+  }
+}
+.backdrop {
+  position: fixed;
+  z-index: 1040;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+.modal-title {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+.modal-header {
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-desc,
+.modal-header,
+.modal-footer {
+  padding: 1.3rem;
+}
+
+.btn-modal-mt {
+  margin-top: 2em;
+}

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 // styles&images
-import './Footer.css'
+import './scss/Footer.scss'
 import github from '../assets/github.png'
 import linkedin from '../assets/linkedin.png'
 
@@ -20,6 +20,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      
       <div className='footer-copyright'>
         <a href='https://github.com/Masamist?tab=repositories'>
           <img src={github} alt='GitHub' />
