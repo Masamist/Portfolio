@@ -5,6 +5,8 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import Smahh from './pages/Smahh'
+import SchoolKitchen from './pages/SchoolKitchen'
 import KPCProject from './pages/KPCProject'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -29,6 +31,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/smahh" element={<Smahh />} />
+            <Route path="/school-kitchen" element={<SchoolKitchen />} />
             <Route path="/kpc-project" element={<KPCProject />} />
             <Route path="/redirect" element={<Navigate to="/" />} />
           </Routes>

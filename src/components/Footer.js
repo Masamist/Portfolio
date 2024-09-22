@@ -8,7 +8,6 @@ import linkedin from '../assets/linkedin.png'
 import upicon from '../assets/arrow_circle_up.svg'
 
 export default function Footer() {
-
   return (
     <footer className='footer'>
       <div>
@@ -46,7 +45,6 @@ export default function Footer() {
 }
 
 const TopButton = () => {
-
   useEffect(() => {
     window.scrollTo({top: 0, left:0, behavior: 'smooth'})
   }, [])

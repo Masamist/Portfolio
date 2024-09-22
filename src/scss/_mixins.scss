@@ -7,7 +7,7 @@
   .bg-container#{$name} {
     width: 100%;
     margin: 0;
-    padding: 3.5rem 5rem 5rem 8rem;
+    padding: 3.5rem 5rem 5rem 5rem;
     justify-content: center;
     background-color: $bg;
     @media (max-width: 1200px) {
@@ -17,7 +17,7 @@
       padding: 2rem;
     }
     @media (max-width: 500px) {
-      padding: 1em;
+      padding: 1.5em;
     }
   }
 }
@@ -26,6 +26,30 @@
 @include bg-container("-tertiary", var.$tertiary);
 @include bg-container("-white", white);
 @include bg-container("-kpc", var.$kpc);
+
+@mixin summary-container ($name:"", $bg:white) {
+  .summary-container#{$name} {
+    width: 100%;
+    margin: 0;
+    padding: 5rem 5rem 2rem 5rem;
+    justify-content: center;
+    background-color: $bg;
+    @media (max-width: 1200px) {
+      padding: 4rem 3rem 1rem 3rem;
+    }
+    @media (max-width: 780px) {
+      padding: 4rem 1rem 0 1rem;
+    }
+    @media (max-width: 780px) {
+      padding: 4rem 2rem 0 2rem;
+    }
+    @media (max-width: 500px) {
+      padding: 4rem 1.5rem 0 1.5rem;
+    }
+  }
+}
+@include summary-container("-kpc", var.$kpc);
+@include summary-container("-sk", var.$sk);
 
 // headings
 @mixin header($name:"", $col, $align){
@@ -88,8 +112,8 @@
 @mixin txt($name:"", $col){
   .txt#{$name} {
     color: $col;
-    font-size: 1.2em;
-    line-height: 1.7em;
+    font-size: 1.1em;
+    line-height: 1.5em;
     padding: 1.1em 0;
     @media (max-width: 700px) {
       font-size: 1em;
@@ -109,11 +133,11 @@
   $hover-col:var.$primary
   ){
   .btn#{$name}{
-    border: 2px solid $border;
+    border: 1px solid $border;
     background-color: $bg;
     color: $col;
     padding: .5rem 6rem;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 4px;
     align-self: center;
     text-decoration: none;
@@ -144,7 +168,8 @@ $buttons:
   -secondary var.$secondary white white white var.$secondary, 
   -tertiary white var.$tertiary var.$tertiary  var.$tertiary white,
   -secondaryfill var.$secondary white var.$secondary white var.$secondary,
-  -kpcfill inherit var.$kpc var.$kpc var.$kpc white;
+  -kpcfill inherit var.$kpc var.$kpc var.$kpc white,
+  -skfill inherit var.$sk var.$sk var.$sk white;
 
 @each $name, $bg, $col, $border-col, $hover-bg, $hover-col in $buttons {
   @include btn($name, $bg, $col, $border-col, $hover-bg, $hover-col)
@@ -187,6 +212,7 @@ $buttons:
 $buttons: 
   "",
   -kpc white var.$kpc var.$kpc var.$kpc white,
+  -sk white var.$sk var.$sk var.$sk white,
   -poco white var.$poco var.$poco var.$poco white,
   -game inherit var.$game var.$game var.$game var.$tertiary,
   -digital-resouce white var.$digital-resouce var.$digital-resouce var.$digital-resouce white,
@@ -194,7 +220,8 @@ $buttons:
   -cinema white var.$cinema var.$cinema var.$cinema white,
   -suger-smash white var.$suger-smash var.$suger-smash var.$suger-smash white,
   -primary var.$primary white white white var.$primary,
-  -kpcfill var.$kpc white white white var.$kpc;
+  -kpcfill var.$kpc white white white var.$kpc,
+  -skfill var.$sk white white white var.$sk;
 @each $name, $bg, $col, $border-col, $hover-bg, $hover-col in $buttons {
   @include project-btn($name, $bg, $col, $border-col, $hover-bg, $hover-col)
 }

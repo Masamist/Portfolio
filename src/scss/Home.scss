@@ -8,13 +8,13 @@
   flex-direction: row;
   width: 100%;
   height: auto;
-  padding: 4rem 0 4rem 20rem;
+  padding: 4rem 2rem 4rem 16rem;
   @media (max-width: 1500px) {
-    padding: 1rem 0 3rem 10rem;
+    padding: 1rem 2rem 3rem 5rem;
   }
   @media (max-width: 1200px) {
     flex-direction: column;
-    padding: 1rem 0 3rem 0;
+    padding: 0 0 3rem 3rem;
     justify-content: center;
   }
   @media (max-width: 480px) {
@@ -38,7 +38,7 @@
         padding: 4rem;
       }
       @media (max-width: 600px) {
-        padding: 1rem 1rem 3rem 1rem;
+        padding: 2.5rem 1rem 3rem 1rem;
       }
       @media (max-width: 480px) {
         padding: 3rem 2rem;
@@ -50,7 +50,7 @@
     padding: 0 0 0 1rem;
     @media (max-width: 1500px) {
       width: 80%;
-      padding: 2rem 0 0 1rem;
+      padding: 1rem 0 0 1rem;
     }
     @media (max-width: 1200px) {
       width: 28%;
@@ -62,6 +62,7 @@
     @media (max-width: 600px) {
       width: 15rem;
       padding-right: 1rem;
+      padding-bottom: 0;
     }
   }
 }
@@ -77,12 +78,10 @@
     font-size: 2.5em;
   }
   @media (max-width: 600px) {
-    font-size: 2.6em;
-    line-height: 3.6rem;
+    font-size: 2.3em;
   }
   @media (max-width: 480px) {
     font-size: 2em;
-    line-height: 2.8rem;
     padding-left: 0;
   }
   @media (max-width: 380px) {
@@ -101,12 +100,12 @@
     width: 100%;
     padding: 4rem 2rem 4rem 4rem;
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1200px) {
       display: flex;
       flex-direction: column;
       justify-items: center;
-      padding: 4rem auto;
-      max-width: 800px;
+      padding: 3rem auto;
+      max-width: 580px;
   }
   @media (max-width: 900px) {
     width: 100%;
@@ -131,17 +130,18 @@
     line-height: 1.4em;
   }
 }
-
 @media (max-width: 1300px) {
   .intro-img-container{
     display: flex;
     justify-content: center;
   }
+  .intro-img {
+    width: 50%;
+  }
 }
-
 @media (max-width: 600px) {
   .intro-img {
-    width: 18rem;
+    width: 85%;
   }
 }
 
@@ -151,9 +151,6 @@
   padding: 4rem 3rem 5rem 3rem;
   @media (max-width: 800px) {
     padding: 3rem 2rem 4rem 2rem;
-  }
-  @media (max-width: 600px) {
-    padding: 3rem 1rem 4rem 1rem;
   }
 }
 .home-top-flex-col{
@@ -178,7 +175,8 @@
   }
 }
 .home-project-txt-container{
-  width: 750px;
+  width: 45rem;
+  padding-left: 10rem;
   @media (max-width: 1000px) {
     width: 80%;
   }
@@ -194,28 +192,25 @@
   justify-content: space-between;
   gap: 5%;
   margin: 4rem 0;
-  @media (max-width: 1100px) {
+  @media (max-width: 1000px) {
     margin: 2rem 0;
     flex-direction: column;
     align-items: center;
-    gap: 3.5em;
+    row-gap: 5rem;
+    column-gap: 0;
   }
-  @media (max-width: 600px) {
-    gap: 2.8em;
-  }
+
 
   div{
     width: 30%;
     @media (max-width: 1100px) {
       width: 50%;
     }
-    @media (max-width: 800px) {
-      width: 90%;
+    @media (max-width: 750px) {
+      width: 100%;
     }
     img {
       width: 100%;
-      border: 1px solid #BFBFBF;
-      box-shadow: 5px 5px 5px #ddd;
     }
     h3 {
       color: var.$tertiary;
@@ -236,12 +231,21 @@
 
 /* challenge */
 #callenge-container-padding{
-  padding: 4rem 0;
+  padding: 5rem 10rem;
+  @media (max-width: 1100px) {
+    padding: 5rem 5rem;
+  }
+  @media (max-width: 700px) {
+    padding: 3rem 2rem;
+  }
+  @media (max-width: 400px) {
+    padding: 2rem 2rem;
+  }
 }
 .challenge-txt-container{
-  padding: 1rem 18rem;
+  padding: 1rem 20rem;
   @media (max-width: 1500px) {
-    padding: 1rem 14rem;
+    padding: 1rem 10rem;
   }
   @media (max-width: 1100px) {
     padding: 1rem 7rem;
@@ -250,7 +254,7 @@
     padding: 1rem 2rem;
   }
   @media (max-width: 600px) {
-    padding: 1rem 1rem;
+    padding: 1rem 0;
   }
 }
 

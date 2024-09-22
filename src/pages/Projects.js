@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom'
 import '../scss/Projects.scss'
 
 // images
+import smahh from '../assets/projetcs_smahh.png'
+import tools_smahh from '../assets/tools_smahh.png'
 import kpc from '../assets/projetcs_kpc.png'
 import toolsicon from '../assets/tools_kpc.png'
+import tools_sk from '../assets/tools_sk.png'
 import getit_pc from '../assets/getit_pc_image.png'
 import poster_getit_agile from '../assets/poster_agile.png'
 import poster_getit_django from '../assets/poster_django.png'
@@ -33,6 +36,8 @@ export default function Projects() {
   return (
     <>
       <ProjectTop />
+      <Smahh />
+      <SchoolKitcen />
       <Kpc />
       <GetItPython />
       <Poco />
@@ -63,6 +68,80 @@ const ProjectTop = () => {
             and opportunities for further growth.</p>
           </div>
         </div> 
+    </section>
+  )
+}
+
+const Smahh = () => {
+  return (
+    <section className='bg-container-white'>
+      <div className='inner-container'>
+        <div className='project-col-container'>
+          <img src={smahh} alt='Smahh Business Project' />
+          <h3 className='sub-title'>Web Application Project</h3>
+          <h1 className='project-title-kpc'>Smahh Business Project</h1>
+          <p className='txt-primary'>This project was part of an industrial placement for my Bachelor's degree, working with Smahh, 
+            a cybersecurity company seeking a solution for business management and a significant upgrade to their current website. The solution included developing an online ticketing system and a new website, based on requirements gathered through stakeholder interviews and related research. The solution design involved prototyping, development, testing, and deployment. Additionally, an experimental approach was taken using JMeter to measure response time, system performance, and hits per second.</p>
+          <div className='tool-icons-container'>
+            <img className='tool-icons' src={tools_smahh} alt='Tool icons' />
+          </div>
+          
+          <div className='project-btn-container'>
+            <div className='btn-inner-container-whole'>
+              <Link to="/smahh">
+                <button className='project-btn-kpc'>More project details</button>
+              </Link>
+            </div>
+            <div className='btn-inner-container-half'>
+              <a href='https://github.com/Masamist/SmahhProject'>
+                <button className='project-btn-kpc'>Code on GitHub</button>
+              </a>
+            </div>
+            <div className='btn-inner-container-half'>
+              <a href='https://smahh-web.vercel.app/'>
+                <button className='project-btn-kpc'>Deployed Site</button>
+              </a>
+            </div>  
+          </div>
+
+        </div>
+      </div>
+    </section>
+  )
+}
+const SchoolKitcen = () => {
+  return (
+    <section className='bg-container-white'>
+      <div className='inner-container'>
+        <div className='project-col-container'>
+          <div className='sk-mobile-container'>
+            <h3 className='sub-title'>Mobile App Project</h3>
+            <h1 className='project-title-kpc'>School Kitchen</h1>
+            <p className='txt-primary'>School Kitchen is a mobile application that empowers parents 
+              to easily order their children's school lunches. Parents can view the menu with 
+              appealing images, select meals, place orders, 
+              and make payments—all from their mobile device. School Kitchen app also facilitates seamless connections between parents, schools, food providers, and local delivery agents. </p>
+            
+          </div>          
+          <div className='tool-icons-container'>
+            <img className='tool-icons' src={tools_sk} alt='Tool icons' />
+          </div>
+          
+          <div className='project-btn-container'>
+            <div className='btn-inner-container-half'>
+              <Link to="/school-kitchen">
+                <button className='project-btn-kpc'>More project details</button>
+              </Link>
+            </div>
+            <div className='btn-inner-container-half'>
+              <a href='https://github.com/Masamist/SchoolKitchen'>
+                <button className='project-btn-kpc'>Code on GitHub</button>
+              </a>
+            </div>  
+          </div>
+
+        </div>
+      </div>
     </section>
   )
 }

@@ -26,7 +26,7 @@ const KpcTop = () => {
   return (
     <section className='kpc-top'>
       <div className='kpc-container'>
-        <h1 className='kpc-top-title'>Kauri Point<br />
+        <h1 className='kpc-top-title'>Smahh<br />
           Construction Project</h1>
         <p className='txt-primary'>
         Kauri Point Construction is a company based in Auckland 

@@ -21,17 +21,22 @@ const AboutIntroduction = () => {
       <div className='about-container'>
         <h1 className='header-secondary'>Hi there,<br />I am Masami.</h1>
         <p className='txt-primary'>
-        I have recently completed a diploma in Software Development and am currently studying 
-        the Batchelor of Applied Information Technology at Whitecliffe which I will have completed 
-        studying by the end of 2023, 
-        focusing on building my career as a Full-Stack developer.<br /><br />
-        My skills are React, HTML, CSS, Bootstrap, Django as Front-end and Node, Mongo DB, 
-        SQL, Firebase as Back-end, also JavaScript, Python and C#. I also have background in design, 
-        I was a graphic designer which I leverage for UX and UI design my skills are Figma, 
-        Adobe Illustrator and Photoshop. I effectively contribute to an agile team environment with 
-        my agile project management skills.<br /><br />
-          I love creative work designing and coding, collaborating with customers and users enabling 
-          them to succeed.  I am looking forward to diving into a new project and working with new people.
+        I recently completed my Bachelor of Applied Information Technology at Whitecliffe and 
+        am actively pursuing a career as a full-stack developer. My passion lies in Software 
+        and Web Development, and the ability to work across both front-end and back-end technologies 
+        excites me, as it allows me to approach projects from a comprehensive, end-to-end perspective. 
+        I thrive on solving complex problems and continually learning new technologies to create efficient, 
+        user-friendly solutions. <br /><br />
+        My technical skills include React, HTML, CSS, Tailwind, and Django for front-end development, 
+        along with Node, MongoDB, SQL, and Firebase for back-end development. Additionally, 
+        I have a strong command of JavaScript, Python, and C#. With a background in graphic design, 
+        I also bring a keen eye for UX and UI design, which I leverage to create visually appealing 
+        and functional user interfaces.<br /><br />
+        I excel in collaborative environments and am skilled at contributing effectively within 
+        agile teams. I enjoy working closely with team members to brainstorm creative ideas, 
+        resolve technical challenges, and deliver high-quality solutions that meet both customer 
+        and user needs. I am eager to dive into new projects, collaborate with diverse teams, 
+        and work with clients to deliver impact solutions that drive success.
         </p>
       </div>
     </section>
@@ -63,10 +68,9 @@ const Experience = () => {
           <h3 className='about-ex-title'>Batchelor of Applied Information Technology (NZQA Level 7)</h3>
             <p className='about-ex-year-info'>Whitecliffe | Auckland | Jul 2023 - Jun 2024</p>
             <p className='txt-primary'>
-            I am currently completing my Batchelor study at campus which ends in December, 
-            then industry placement from January, which will be completed by June 2024. 
-            This program focuses on increasing technical skill to an industry ready level 
-            including Advanced Programming, Interaction Design and Web Technologies.  
+            I have recently completed my Bachelor’s studies, which focused on enhancing technical skills 
+            in an actual industry environment through internship experience, including advanced 
+            programming, interaction design, and web technologies. 
             </p><br /><br />
 
             <h3 className='about-ex-title'>Diploma in Software Development (NZQA Level6)</h3>

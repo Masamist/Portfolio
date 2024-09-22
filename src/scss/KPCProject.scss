@@ -11,32 +11,29 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100%;
-  margin-top: 2rem;
-  @media (max-width: 1500px) {
-    margin-top: 1rem;
-  }
+  margin-top: 2.5rem;
   @media (max-width: 1000px) {
-    margin-top: .5rem;
+    margin-top: 3rem;
   }
   @media (max-width: 800px) {
-    margin-top: 0;
+    margin-top: 2rem;
   }
 }
 .kpc-container {
   max-width: 55rem;
-  padding: 18rem 5rem 3rem 5rem;
-  @media (max-width: 1200px) {
-    padding: 18rem 3rem 0rem 3rem;
+  padding: 13rem 5rem 3rem 5rem;
+  @media (max-width: 1100px) {
+    padding: 12rem 3rem 0rem 3rem;
   }
   @media (max-width: 800px) {
     width: 100%;
-    padding: 13rem 3rem 0rem 3rem;
+    padding: 10rem 3rem 0rem 3rem;
   }
   @media (max-width: 600px) {
-    padding: 10rem 2rem 0rem 2rem;
+    padding: 7rem 2rem 0rem 2rem;
   }
   @media (max-width: 400px) {
-    padding: 10rem 1.5rem 0 1.5rem;
+    padding: 5rem 1.5rem 0 1.5rem;
   }
 }
 .kpc-top-title{
@@ -47,8 +44,16 @@
     font-size: 3.4rem;
     line-height: 4rem;
   }
+  @media (max-width: 800px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
   @media (max-width: 600px) {
     font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  @media (max-width: 450px) {
+    font-size: 2.2rem;
     line-height: 3rem;
   }
 }
@@ -92,21 +97,24 @@
 }
 
 .kpc-cat-name{
-  font-size: 3.4rem;
+  font-size: 2.7rem;
   color: var.$kpc;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   @media (max-width: 800px) {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   @media (max-width: 600px) {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
   }
 }
 .kpc-sub-heading {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.6rem;
   @media (max-width: 800px) {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 1.1rem;
   }
 }
 

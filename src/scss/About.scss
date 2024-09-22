@@ -7,9 +7,6 @@
 }
 .about-container {
   max-width: 47rem;
-  @media (max-width: 900px) {
-    padding-bottom: 1rem;
-  }
 }
 
 /* Experience */
@@ -18,15 +15,11 @@
   padding: 2rem 0 0 0;
   display: flex;
   flex-direction: row;
-  padding-right: 3rem;
   gap: 4%;
   @media (max-width: 800px) {
     flex-direction: column;
     width: 100%;
-    padding: 0 2.5rem;
-  }
-  @media (max-width: 500px) {
-    padding: 0 1.5rem;
+    padding: 0;
   }
   div{
     &:first-child {

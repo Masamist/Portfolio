@@ -7,43 +7,42 @@
   margin: 0;
   padding: 0;
   @media (max-width: 700px) {
-    height: 13vh;
+    height: 11vh;
   }
 }
 .navbar {
-  width: 22em;
+  width: 18.5em;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
   float: right;
-  @media (max-width: 800px) {
-    width: 20em;
+  @media (max-width: 850px) {
+    width: 16em;
   }
   @media (max-width: 400px) {
-    width: 100%;
-    float: left;
-    padding-left: 1rem;
+    width: 14em;
   }
   ul {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0;
     justify-content: flex-end;
-    padding-left: 1rem;
+    padding-left: .7rem;
     li {
-      font-size: 1.1em;
+      font-size: 1em;
       font-weight: 400;
-      padding-left: .1rem;
+      padding-left: 0;
       padding-top: .9rem;
+      line-height: .9rem;
       @media (max-width: 850px) {
-        font-size: 1rem;
+        font-size: .9rem;
+        line-height: 1rem;
         padding-left: 0;
         padding-top: .8rem;
       }
       @media (max-width: 450px) {
-        font-size: rem;
-        padding-left: .1rem;
-        padding-top: .7rem;
+        font-size: .7rem;
+        padding-top: .5rem;
       }
       a {
         text-decoration: none;
@@ -62,24 +61,28 @@
   padding-top: 1rem;
 }
 .logo {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-family: var.$montserrat;
   font-weight: 500;
   color: #ccc;
   text-align: end;
+  line-height: 2.1rem;
   padding-top: .5rem;
   padding-right: 1rem;
   display: flex;
   align-items: center;
   margin-right: auto;
   @media (max-width: 1200px) {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
   @media (max-width: 850px) {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
   @media (max-width: 400px) {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 
