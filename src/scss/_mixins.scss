@@ -48,6 +48,7 @@
     }
   }
 }
+@include summary-container("-smahh", var.$smahh);
 @include summary-container("-kpc", var.$kpc);
 @include summary-container("-sk", var.$sk);
 
@@ -101,6 +102,8 @@
 @include project-title("-secondary", var.$secondary);
 @include project-title("-tertiary", var.$tertiary);
 @include project-title("-white", white);
+@include project-title("-smahh", var.$smahh);
+@include project-title("-sk", var.$sk);
 @include project-title("-kpc", var.$kpc);
 @include project-title("-poco", var.$poco);
 @include project-title("-digital-resouce", var.$digital-resouce);
@@ -168,6 +171,7 @@ $buttons:
   -secondary var.$secondary white white white var.$secondary, 
   -tertiary white var.$tertiary var.$tertiary  var.$tertiary white,
   -secondaryfill var.$secondary white var.$secondary white var.$secondary,
+  -smahhfill inherit var.$smahh var.$smahh var.$smahh white,
   -kpcfill inherit var.$kpc var.$kpc var.$kpc white,
   -skfill inherit var.$sk var.$sk var.$sk white;
 
@@ -211,6 +215,7 @@ $buttons:
 }
 $buttons: 
   "",
+  -smahh white var.$smahh var.$smahh var.$smahh white,
   -kpc white var.$kpc var.$kpc var.$kpc white,
   -sk white var.$sk var.$sk var.$sk white,
   -poco white var.$poco var.$poco var.$poco white,

@@ -59,20 +59,23 @@ const Details = () => {
         <h1 className='sk-cat-name'>Requirement</h1>
         <div className='sk-img-container'>
           <h2 className='sk-sub-heading'>Problems and Solutions</h2>
-          <p className='txt-primary'>Technology evolves rapidly, leading many schools 
-            to adopt online lunch ordering systems. However, both parents and food providers 
-            remain unsatisfied. Parents encounter usability issues and find the process 
-            time-consuming, while food providers face limitations despite potential support 
-            from local restaurants and cafes.
+          <p className='txt-primary'>Technology has been evolving rapidly, 
+            resulting in numerous schools implementing online lunch ordering systems. 
+            However, both parents and food providers are not yet satisfied with 
+            the existing solutions. Parents of school kids, at some schools where 
+            ordering meals online is via a web browser, frequently encounter usability 
+            issues and find the process time-consuming. Meanwhile, existing school 
+            lunch providers struggle with limited capacity, while potential providers 
+            like local restaurants and cafes lack a channel to offer their meals to 
+            schools.
           </p>
           <p className='txt-primary'>
-            School Kitchen app is designed to streamline the lunch ordering process and 
-            encompassing payment processing. The app offering parents a user-friendly 
-            mobile platform for convenient and time-saving orders. 
-            Food providers who wish to participate in the lunch order service can easily 
-            access the system, regularly update menus to reflect changing factors such as 
-            seasonal availability and food market prices, as well as efficiently manage and 
-            fulfil orders.</p>
+          School Kitchen app is the solution designed to streamline the lunch ordering process 
+          and encompassing payment processing. The app offering parents a user-friendly mobile 
+          platform for convenient and time-saving orders. Food providers who wish 
+          to participate in the lunch order service can easily access the system, 
+          regularly update menus to reflect changing factors such as seasonal availability 
+          and food market prices, as well as efficiently manage and fulfill orders. </p>
         </div>          
       </div>
 
@@ -89,10 +92,11 @@ const Details = () => {
       <div className='inner-container-col'>
         <h2 className='sk-sub-heading'>Unique Feature: Monthly ordering system</h2>
         <p className='txt-primary'>
-          In recent times, household expenses have been on the rise due to significant inflation and with many parents 
-          leading busy lives, preparing lunch in the morning has become a challenge. 
-          "School Kitchen" offers weekly or monthly meal plans to ensure kids receive balanced 
-          meals and ease the burden of lunch preparation for busy parents.
+        In recent times, many parents have busy lives, working long hours 
+        where preparing lunch in the morning has become a challenge. 
+        So instead of having to enter an order everyday "School Kitchen" offers weekly 
+        or monthly meal plans to ensure kids receive balanced meals and ease the 
+        burden of lunch preparation for busy parents. 
         </p>
       </div>
 
@@ -125,7 +129,7 @@ const Details = () => {
         <p className='txt-primary'>
           <b>Platform:</b><br />
           Since the primary users of the lunch order system are parents and caregivers, 
-          the most common device used is a mobile phone. Mobile apps have many advantages:<br />
+          the most common device used is a mobile phone. Mobile apps have many advantages:<br /><br />
           - Enhanced user experience is optimised for mobile devices, it often has a faster loading time and seamless experience<br />
           - Push notifications to users allows order reminders<br />
           - Direct access to service which enables reduction of steps within the tasks compared to navigating through a website<br />
@@ -205,19 +209,14 @@ const Details = () => {
       <h1 className='sk-cat-name'>Development</h1>
         <h2 className='sk-sub-heading'>My role</h2>
         <p className='txt-primary'>
-        This was a large-scale project that I successfully completed with a 
-        classmate, we worked together to create and deploy the web application, 
-        it was a significant undertaking as it would normally be assigned to a 
-        team of 4 to 5 students. My roles were: business analyst, I researched 
-        and created the business and solution requirements and populated each 
-        document, UI designer design including mock-ups. My main role was 
-        back-end developer. We decided to use React JS as our web framework 
-        and Firebase for our database. I considered utilizing Node JS as the 
-        back end; however Firebase has authentication including web token and 
-        React hooks simplifies firebase implementation. React and Firebase are 
-        a good combination for a project of this size and enabled us to complete 
-        the project on a tight schedule. This was my first-time using Firebase 
-        it was both challenging and rewarding.
+        I independently completed this mobile application project, which involved planning, 
+        researching, designing, developing, and testing. The technologies used include 
+        React Native as the multi-platform development framework, Sanity as the database, 
+        and Firebase for authentication. It was a challenging project, as I had never used 
+        React Native before, and I had to take on multiple roles to complete it within 
+        a limited time. However, my passion for this project was driven by my experience 
+        as a mother. My children’s school lunch order system had significant room for 
+        improvement, so I incorporated many ideas I wished to see in a school lunch mobile application.
         </p>
       </div>
       
@@ -232,15 +231,18 @@ const Summary = () => {
       <div className='inner-container-col'>
         <h2 className='kpc-sub-heading' id="txt-white">Summary</h2>
         <p className='txt-white'>
-        Overall, the project went extremely well, our team showcased our skills, 
-        we learnt a lot and the client was very impressed with the web 
-        application. Projects are always challenging, the code does not work 
-        sometimes, the reward is resolving the issues and bugs.
+        I was passionate about developing the school lunch order project because, 
+        as a parent, I saw significant room for improvement in the existing system 
+        at my children’s school. I incorporated several ideas based on research 
+        from parents' perspectives on what they wanted in a school lunch mobile 
+        application. Additionally, I thoroughly enjoyed working with React Native 
+        for this project. I found it to be a great tool that was easier to use 
+        compared to Xamarin, which I had learned the previous year.
         </p>
         
         <div className='project-btn-container'>
           <div className='btn-inner-container-half'>
-            <a href='https://github.com/Masamist/KauriPointConstruction'>
+            <a href='https://github.com/Masamist/SchoolKitchen'>
               <button className='project-btn-skfill'>Code on GitHub</button>
             </a>
           </div>

@@ -79,7 +79,7 @@ const Smahh = () => {
         <div className='project-col-container'>
           <img src={smahh} alt='Smahh Business Project' />
           <h3 className='sub-title'>Web Application Project</h3>
-          <h1 className='project-title-kpc'>Smahh Business Project</h1>
+          <h1 className='project-title-smahh'>Smahh Business Project</h1>
           <p className='txt-primary'>This project was part of an industrial placement for my Bachelor's degree, working with Smahh, 
             a cybersecurity company seeking a solution for business management and a significant upgrade to their current website. The solution included developing an online ticketing system and a new website, based on requirements gathered through stakeholder interviews and related research. The solution design involved prototyping, development, testing, and deployment. Additionally, an experimental approach was taken using JMeter to measure response time, system performance, and hits per second.</p>
           <div className='tool-icons-container'>
@@ -89,17 +89,17 @@ const Smahh = () => {
           <div className='project-btn-container'>
             <div className='btn-inner-container-whole'>
               <Link to="/smahh">
-                <button className='project-btn-kpc'>More project details</button>
+                <button className='project-btn-smahh'>More project details</button>
               </Link>
             </div>
             <div className='btn-inner-container-half'>
               <a href='https://github.com/Masamist/SmahhProject'>
-                <button className='project-btn-kpc'>Code on GitHub</button>
+                <button className='project-btn-smahh'>Code on GitHub</button>
               </a>
             </div>
             <div className='btn-inner-container-half'>
               <a href='https://smahh-web.vercel.app/'>
-                <button className='project-btn-kpc'>Deployed Site</button>
+                <button className='project-btn-smahh'>Deployed Site</button>
               </a>
             </div>  
           </div>
@@ -116,7 +116,7 @@ const SchoolKitcen = () => {
         <div className='project-col-container'>
           <div className='sk-mobile-container'>
             <h3 className='sub-title'>Mobile App Project</h3>
-            <h1 className='project-title-kpc'>School Kitchen</h1>
+            <h1 className='project-title-sk'>School Kitchen</h1>
             <p className='txt-primary'>School Kitchen is a mobile application that empowers parents 
               to easily order their children's school lunches. Parents can view the menu with 
               appealing images, select meals, place orders, 
@@ -130,12 +130,12 @@ const SchoolKitcen = () => {
           <div className='project-btn-container'>
             <div className='btn-inner-container-half'>
               <Link to="/school-kitchen">
-                <button className='project-btn-kpc'>More project details</button>
+                <button className='project-btn-sk'>More project details</button>
               </Link>
             </div>
             <div className='btn-inner-container-half'>
               <a href='https://github.com/Masamist/SchoolKitchen'>
-                <button className='project-btn-kpc'>Code on GitHub</button>
+                <button className='project-btn-sk'>Code on GitHub</button>
               </a>
             </div>  
           </div>
