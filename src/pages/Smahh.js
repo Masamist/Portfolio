@@ -1,5 +1,5 @@
 // style
-import '../scss/KPCProject.scss'
+import '../scss/SmahhProject.scss'
 
 // images
 import kpcWebsite from '../assets/kpc_website.png'
@@ -24,11 +24,11 @@ export default function SmahhProject() {
 
 const Smahh = () => {
   return (
-    <section className='kpc-top'>
-      <div className='kpc-container'>
-        <h1 className='kpc-top-title'>Smahh Website &<br />
+    <section className='smahh-top'>
+      <div className='smahh-container'>
+        <h1 className='smahh-top-title'>Smahh Website &<br />
           Ticketing System Project</h1>
-        <p className='txt-primary'>
+        <p className='txt-white'>
         This project is the final internship project for my bachelor degree 
         and successfully delivers a robust and user-friendly website and ticketing 
         system for Smahh cybersecurity company. The technologies for this  project 
