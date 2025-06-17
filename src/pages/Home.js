@@ -70,11 +70,13 @@ const Introduction = () => {
               My passion is Web Development <br />
               and UX UI Design
             </h2>
-            <p className='txt-white'>I completed a Bachelor of Applied Information Technology 
-              at Whitecliffe College and excited to build a career as a Full-Stack developer.<br />
-              My skills are React, JavaScript, HTML, CSS, Tailwind, Django Framework with Python 
-              for front-end, and Node, SQL and MongoDB for back-end, also I am an experienced designer.  
-              I enjoy applying my skills and creativity on new projects.</p><br />
+            <p className='txt-white'>
+            I’m a web developer and UX/UI designer with a Bachelor of Applied IT from Whitecliffe, 
+            passionate about building clean, user-focused digital solutions.<br />
+            Driven to grow as a full-stack developer, I bring hands-on experience with React, JavaScript, 
+            HTML, CSS, Tailwind, Django (Python), Node.js, SQL, and MongoDB. 
+            I combine design insight with technical skill to create engaging, 
+            results-driven websites that solve real problems and support business growth.</p><br />
               <Link to="/about">
                 <button className='btn-primary'>About Me</button>
               </Link>

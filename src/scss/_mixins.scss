@@ -226,7 +226,8 @@ $buttons:
   -suger-smash white var.$suger-smash var.$suger-smash var.$suger-smash white,
   -primary var.$primary white white white var.$primary,
   -kpcfill var.$kpc white white white var.$kpc,
-  -skfill var.$sk white white white var.$sk;
+  -skfill var.$sk white white white var.$sk,
+  -smahhfill var.$smahh white white white var.$smahh;
 @each $name, $bg, $col, $border-col, $hover-bg, $hover-col in $buttons {
   @include project-btn($name, $bg, $col, $border-col, $hover-bg, $hover-col)
 }

@@ -33,7 +33,7 @@ export default function Footer() {
             <img src={linkedin} alt='LinkedIn' />
           </a> 
           <p>
-            2023 Masami Stonebridge Portfolio, All Rights Reserved
+            2025 Masami Stonebridge Portfolio, All Rights Reserved
           </p>
         </div>
         

@@ -1,5 +1,6 @@
 // style
 import '../scss/SchoolKitchen.scss'
+import '../scss/ProjectDetailCommon.scss'
 
 // images
 import skDiagram from '../assets/sk_diagram.png'
@@ -56,9 +57,9 @@ const Details = () => {
   return (   
     <section className='bg-container-white'>
       <div className='inner-container-col'>
-        <h1 className='sk-cat-name'>Requirement</h1>
+        <h1 className='pdc-cat-name'>Requirement</h1>
         <div className='sk-img-container'>
-          <h2 className='sk-sub-heading'>Problems and Solutions</h2>
+          <h2 className='pdc-sub-heading'>Problems and Solutions</h2>
           <p className='txt-primary'>Technology has been evolving rapidly, 
             resulting in numerous schools implementing online lunch ordering systems. 
             However, both parents and food providers are not yet satisfied with 
@@ -80,17 +81,17 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='sk-sub-heading'>Context Diagram</h2>
+        <h2 className='pdc-sub-heading'>Context Diagram</h2>
         <img className='kpc-img-diagram' src={skDiagram} alt='Context Diagram' />
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='sk-sub-heading'>User Roles</h2>
+        <h2 className='pdc-sub-heading'>User Roles</h2>
         <img className='kpc-img-diagram' src={skRole} alt='Context Diagram' />
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='sk-sub-heading'>Unique Feature: Monthly ordering system</h2>
+        <h2 className='pdc-sub-heading'>Unique Feature: Monthly ordering system</h2>
         <p className='txt-primary'>
         In recent times, many parents have busy lives, working long hours 
         where preparing lunch in the morning has become a challenge. 
@@ -101,7 +102,7 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='sk-sub-heading'>Product Users</h2>
+        <h2 className='pdc-sub-heading'>Product Users</h2>
         <p className='txt-primary'>
           <b>Primary users: </b>Parents/Caregivers, Food providers, Delivery agents,
               School, School Kitchen staff<br />
@@ -111,7 +112,7 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='sk-sub-heading'>Persona</h2>
+        <h2 className='pdc-sub-heading'>Persona</h2>
         <img className='kpc-img-diagram' src={sk_persona} alt='Persona' />
       </div>
 
@@ -125,7 +126,7 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='sk-sub-heading'>Platform and Features</h2>
+        <h2 className='pdc-sub-heading'>Platform and Features</h2>
         <p className='txt-primary'>
           <b>Platform:</b><br />
           Since the primary users of the lunch order system are parents and caregivers, 
@@ -146,27 +147,27 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='sk-sub-heading'>Navigation Overview</h2>
+        <h2 className='pdc-sub-heading'>Navigation Overview</h2>
         <img className='kpc-img-diagram' src={sk_sitemap} alt='Navigation Overview' />
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='sk-sub-heading'>Wire-frames and Application Flow</h2>
+        <h2 className='pdc-sub-heading'>Wire-frames and Application Flow</h2>
         <img className='kpc-img-diagram' src={sk_wireframe_flow} alt='Wireframe and Application Flow' />
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='sk-sub-heading'>Task Flow</h2>
+        <h2 className='pdc-sub-heading'>Task Flow</h2>
         <img className='kpc-img-diagram' src={sk_taskflow} alt='Tawsk Flow' />
       </div>
     
       <div className='inner-container-col'>
-        <div className='sub-heading-container'>
-          <h1 className='sk-cat-name'>Design Solutions</h1>
+        <div className='pdc-heading-container'>
+          <h1 className='pdc-cat-name'>Design Solutions</h1>
         </div>
         
-        <h2 className='sk-sub-heading'>UI Design example - Mobile App</h2>
-        <div className='sk-ui-img-container'>
+        <h2 className='pdc-sub-heading'>UI Design example - Mobile App</h2>
+        <div className='pdc-ui-img-container'>
           <div>
             <img src={sk_login_screen} alt='Mobile App Login' />
           </div>
@@ -180,7 +181,7 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-        <div className='sk-ui-img-container'>
+        <div className='pdc-ui-img-container'>
           <div>
             <img src={sk_home_screen} alt='Mobile App Home' />
           </div>
@@ -194,7 +195,7 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-        <div className='sk-ui-img-container'>
+        <div className='pdc-ui-img-container'>
           <div>
             <img src={sk_shopping_bag_screen} alt='Mobile App Shopping Bag' />
           </div>
@@ -206,8 +207,8 @@ const Details = () => {
       </div>
         
       <div className='inner-container-col'>
-      <h1 className='sk-cat-name'>Development</h1>
-        <h2 className='sk-sub-heading'>My role</h2>
+      <h1 className='pdc-cat-name'>Development</h1>
+        <h2 className='pdc-sub-heading'>My role</h2>
         <p className='txt-primary'>
         I independently completed this mobile application project, which involved planning, 
         researching, designing, developing, and testing. The technologies used include 
@@ -229,7 +230,7 @@ const Summary = () => {
   return (
     <summary className='summary-container-sk'>
       <div className='inner-container-col'>
-        <h2 className='kpc-sub-heading' id="txt-white">Summary</h2>
+        <h2 className='pdc-sub-heading' id="txt-white">Summary</h2>
         <p className='txt-white'>
         I was passionate about developing the school lunch order project because, 
         as a parent, I saw significant room for improvement in the existing system 

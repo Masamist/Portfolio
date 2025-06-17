@@ -21,22 +21,25 @@ const AboutIntroduction = () => {
       <div className='about-container'>
         <h1 className='header-secondary'>Hi there,<br />I am Masami.</h1>
         <p className='txt-primary'>
-        I recently completed my Bachelor of Applied Information Technology at Whitecliffe and 
-        am actively pursuing a career as a full-stack developer. My passion lies in Software 
-        and Web Development, and the ability to work across both front-end and back-end technologies 
-        excites me, as it allows me to approach projects from a comprehensive, end-to-end perspective. 
-        I thrive on solving complex problems and continually learning new technologies to create efficient, 
-        user-friendly solutions. <br /><br />
-        My technical skills include React, HTML, CSS, Tailwind, and Django for front-end development, 
-        along with Node, MongoDB, SQL, and Firebase for back-end development. Additionally, 
-        I have a strong command of JavaScript, Python, and C#. With a background in graphic design, 
-        I also bring a keen eye for UX and UI design, which I leverage to create visually appealing 
-        and functional user interfaces.<br /><br />
-        I excel in collaborative environments and am skilled at contributing effectively within 
-        agile teams. I enjoy working closely with team members to brainstorm creative ideas, 
-        resolve technical challenges, and deliver high-quality solutions that meet both customer 
-        and user needs. I am eager to dive into new projects, collaborate with diverse teams, 
-        and work with clients to deliver impact solutions that drive success.
+        I am deeply passionate about <b>Software</b> and <b>Web Development</b>, with a strong interest in crafting 
+        seamless and intuitive user experiences through thoughtful <b>UX/UI Design</b>. My journey began with a 
+        creative design background, which has evolved into a holistic approach to developing digital
+        solutions that are both technically robust and visually engaging.<br /> <br />
+        I hold a Bachelor of Applied Information Technology from Whitecliffe, where I gained a solid 
+        foundation in <b>full-stack development</b>. Currently, I work as a freelance <b>web developer</b> and 
+        <b>UX/UI designer</b>, managing websites for small businesses. I specialise in building and maintaining 
+        websites using platforms such as <b>WordPress</b> and <b>Wix</b>, tailoring each site to meet the unique goals 
+        of my clients. This includes everything from understanding the business problem and what 
+        success looks, creating the layout design and content integration, performance optimisation and 
+        ongoing support.<br /><br />
+        My long-term career goal is to grow into a <b>Full-Stack Developer</b>, contributing across the entire 
+        development process—from ideation and user interface design to server-side development and deployment.
+        I bring a broad technical toolkit to the table, which includes <b>React</b>, <b>JavaScript</b>, 
+        <b>HTML</b>, <b>CSS</b>, and <b>Tailwind</b> 
+        for <b>front-end development</b>, and Django with <b>Python</b> for more advanced <b>front-end</b> logic.<br /><br />
+        On the <b>back-end</b>, I work with <b>Node.js</b>, <b>SQL</b>, and <b>MongoDB</b>, allowing me to develop scalable, data-driven 
+        applications. This end-to-end capability empowers me to deliver complete and cohesive solutions that are 
+        well-integrated and easy to maintain.
         </p>
       </div>
     </section>
@@ -52,12 +55,22 @@ const Experience = () => {
             <h2 className='about-ex-category'>Career Summary</h2>
           </div>
           <div>
+            <h3 className='about-ex-title'>Freelance | Web Developer</h3>
+            <p className='about-ex-year-info'>Auckland | 2024 - Now</p>
+            <ul className='txt-primary'>
+              <li>
+                - Designing advertisements, magazines, products, leaflets and company stationery.
+              </li>
+              <li>- Planning commercials.</li>
+              <li>- Including quotes, marketing and sales.</li>
+            </ul><br />
             <h3 className='about-ex-title'>Bisco Japan | Graphic Designer</h3>
             <p className='about-ex-year-info'>Tokyo, Japan | Mar 2001 - Jan 2004</p>
-            <p className='txt-primary'>
-              Designing advertisements, magazines, products, leaflets and company stationery. 
-              Planning commercials including quotes, marketing and sales.
-            </p>
+            <ul className='txt-primary'>
+              <li>- Designing advertisements, magazines, products, leaflets and company stationery.</li>
+              <li>- Planning commercials.</li>
+              <li>- Including quotes, marketing and sales.</li>
+            </ul>
           </div>
         </div>
         <div className='about-ex-container'>

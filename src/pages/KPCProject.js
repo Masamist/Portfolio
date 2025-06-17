@@ -1,5 +1,6 @@
 // style
 import '../scss/KPCProject.scss'
+import '../scss/ProjectDetailCommon.scss'
 
 // images
 import kpcWebsite from '../assets/kpc_website.png'
@@ -62,8 +63,8 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-        <h1 className='kpc-cat-name'>Requirement</h1>
-        <h2 className='kpc-sub-heading'>Problems and Solutions</h2>
+        <h1 className='pdc-cat-name'>Requirement</h1>
+        <h2 className='pdc-sub-heading'>Problems and Solutions</h2>
         <p className='txt-primary'>
         The problem is Kauri Point Construction does not have a project 
         management system everything is currently done manually across many 
@@ -84,17 +85,17 @@ const Details = () => {
       </div>
         
       <div className='inner-container-col'>
-        <h2 className='kpc-sub-heading'>Context Diagram</h2>
+        <h2 className='pdc-sub-heading'>Context Diagram</h2>
         <img className='kpc-img-diagram' src={kpcDiagram} alt='Context Diagram' />
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='kpc-sub-heading'>User Roles</h2>
+        <h2 className='pdc-sub-heading'>User Roles</h2>
         <img className='kpc-img-diagram' src={kpcRole} alt='Context Diagram' />
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='kpc-sub-heading'>User Stories</h2>
+        <h2 className='pdc-sub-heading'>User Stories</h2>
         <p className='txt-primary'>
         <b>Client:</b> I want to be able to be out of town for a week and still see how 
         the project is progressing daily.<br />
@@ -107,7 +108,7 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-      <h2 className='kpc-sub-heading'>Scope</h2>
+      <h2 className='pdc-sub-heading'>Scope</h2>
         <p className='txt-primary'>
         Our scope was to build the project management app for the manager which 
         records each projects details, tasks and estimate cost list, and labour 
@@ -124,10 +125,10 @@ const Details = () => {
       </div>
     
       <div className='inner-container-col'>
-        <div className="sub-heading-container">
-          <h1 className='kpc-cat-name'>Design Solutions</h1>
+        <div className="pdc-heading-container">
+          <h1 className='pdc-cat-name'>Design Solutions</h1>
         </div> 
-        <h2 className='kpc-sub-heading'>UI Design example - Website</h2>
+        <h2 className='pdc-sub-heading'>UI Design example - Website</h2>
         <div className='kpc-ui-img-container'>
           <div>
             <img src={kpcWebHome} alt='Website Homepage' />
@@ -139,7 +140,7 @@ const Details = () => {
       </div>
 
       <div className='inner-container-col'>
-        <h2 className='kpc-sub-heading'>UI Design example - Project Managament App</h2>
+        <h2 className='pdc-sub-heading'>UI Design example - Project Managament App</h2>
         <div className='kpc-ui-img-container'>
           <div>
             <img src={kpcPmsProjectList} alt='Project Managament App Project List' />
@@ -151,10 +152,10 @@ const Details = () => {
       </div>
         
       <div className='inner-container-col'>
-        <div className='sub-heading-container'>
-          <h1 className='kpc-cat-name'>Development</h1>
+        <div className='pdc-heading-container'>
+          <h1 className='pdc-cat-name'>Development</h1>
         </div>
-        <h2 className='kpc-sub-heading'>My role</h2>
+        <h2 className='pdc-sub-heading'>My role</h2>
         <p className='txt-primary'>
         This was a large-scale project that I successfully completed with a 
         classmate, we worked together to create and deploy the web application, 
@@ -181,7 +182,7 @@ const Summary = () => {
   return (
     <summary className='summary-container-kpc'>
       <div className='inner-container-col'>
-        <h2 className='kpc-sub-heading' id="txt-white">Summary</h2>
+        <h2 className='pdc-sub-heading' id="txt-white">Summary</h2>
         <p className='txt-white'>
         Overall, the project went extremely well, our team showcased our skills, 
         we learnt a lot and the client was very impressed with the web 
